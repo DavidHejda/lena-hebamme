@@ -1,3 +1,13 @@
+import {
+  Box,
+  Modal as ChakraModal,
+  Heading,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalHeader,
+  ModalOverlay,
+} from '@chakra-ui/react';
 import { useEffect } from 'react';
 import './Modal.css';
 
@@ -26,13 +36,11 @@ function Modal({
     const header = document.querySelector('.header');
 
     if (isOpen) {
-      document.body.style.overflow = 'hidden';
       // Hide header only when CV modal is open
       if (className.includes('cv-modal') && header) {
         (header as HTMLElement).style.display = 'none';
       }
     } else {
-      document.body.style.overflow = 'unset';
       // Show header again when modal closes
       if (header) {
         (header as HTMLElement).style.display = '';
@@ -40,55 +48,76 @@ function Modal({
     }
 
     return () => {
-      document.body.style.overflow = 'unset';
       if (header) {
         (header as HTMLElement).style.display = '';
       }
     };
   }, [isOpen, className]);
 
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
-    };
-
-    if (isOpen) {
-      window.addEventListener('keydown', handleEscape);
-    }
-
-    return () => {
-      window.removeEventListener('keydown', handleEscape);
-    };
-  }, [isOpen, onClose]);
-
-  if (!isOpen) return null;
-
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div
-        className={`modal-content ${className}`}
-        style={{ maxWidth }}
-        onClick={(e) => e.stopPropagation()}
+    <ChakraModal
+      isOpen={isOpen}
+      onClose={onClose}
+      isCentered
+      size="xl"
+      motionPreset="slideInBottom"
+    >
+      <ModalOverlay bg="rgba(0, 0, 0, 0.6)" />
+      <ModalContent
+        maxW={maxWidth}
+        className={className}
+        borderRadius="15px"
+        boxShadow="0 10px 40px rgba(0, 0, 0, 0.2)"
+        maxH="90vh"
+        overflow="hidden"
+        display="flex"
+        flexDirection="column"
       >
-        <button
-          className="modal-close"
-          onClick={onClose}
-          aria-label="Close modal"
-        >
-          x
-        </button>
-        {displayModalHeader && (
-          <div className="modal-header">
-            {icon && <div className="modal-icon">{icon}</div>}
-            {title && <h2 className="modal-title">{title}</h2>}
-          </div>
+        <ModalCloseButton
+          size="lg"
+          borderRadius="50%"
+          _hover={{
+            background: 'var(--secondary-color)',
+            color: 'var(--text-dark)',
+          }}
+        />
+        {displayModalHeader && (icon || title) && (
+          <ModalHeader
+            textAlign="center"
+            borderBottom="1px solid var(--border-color)"
+            pb={6}
+            pt={10}
+          >
+            {icon && (
+              <Box fontSize="4rem" mb={4}>
+                {icon}
+              </Box>
+            )}
+            {title && (
+              <Heading
+                as="h2"
+                fontSize="2rem"
+                color="var(--text-dark)"
+                fontWeight="400"
+                margin={0}
+              >
+                {title}
+              </Heading>
+            )}
+          </ModalHeader>
         )}
-
-        <div className="modal-body">{children}</div>
-      </div>
-    </div>
+        <ModalBody
+          padding={displayModalHeader ? '2rem 2.5rem' : '0'}
+          overflowY="auto"
+          flex="1"
+          color="var(--text-light)"
+          lineHeight="1.8"
+          fontSize="1.1rem"
+        >
+          {children}
+        </ModalBody>
+      </ModalContent>
+    </ChakraModal>
   );
 }
 

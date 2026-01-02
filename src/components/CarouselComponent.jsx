@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-import { Box, Heading, Image, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Image, useBreakpointValue } from '@chakra-ui/react';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 
@@ -90,10 +90,11 @@ const CarouselComponent = ({ images }) => {
     <Box
       id="home"
       maxWidth="100%"
-      mx="auto"
+      // margin="3vh"
       px={{ base: '4', md: '6', lg: '8' }}
+      margin="4vh auto"
     >
-      <Heading
+      {/* <Heading
         as="h1"
         sx={{ fontFamily: "'Ibm Plex Mono', cursive" }}
         textAlign={'center'}
@@ -101,7 +102,7 @@ const CarouselComponent = ({ images }) => {
         marginBottom={headerMargin}
         fontSize={textSizeHeader}
         px={{ base: '5%', sm: 0 }} // Adjust padding for responsiveness
-      ></Heading>
+      ></Heading> */}
       <Box maxWidth="100%" mx="auto" overflow="hidden">
         <Slider {...settings}>
           {images.map((img, idx) => (

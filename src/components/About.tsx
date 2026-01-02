@@ -17,11 +17,19 @@ const textSections = [
 function About() {
   return (
     <Box width="100%">
-      <Heading
+      {/* <Heading
         as="h2"
         fontSize={{ base: '2rem', md: '3.5rem' }}
         fontWeight="300"
         mb={8}
+        textAlign="center"
+      > */}
+      <Heading
+        as="h1"
+        fontSize={{ base: '2rem', md: '3.5rem' }}
+        fontWeight="300"
+        mb={8}
+        letterSpacing="2px"
         textAlign="center"
       >
         Über Mich

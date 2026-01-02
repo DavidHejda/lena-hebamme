@@ -66,7 +66,7 @@ function ProfilePicture({
             boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
           }}
         >
-          Lebenslauf anzeigen
+          Lebenslauf
         </Button>
       </VStack>
       <CVModal isOpen={isCVModalOpen} onClose={() => setIsCVModalOpen(false)} />

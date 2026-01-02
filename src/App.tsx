@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ProfilePicture from './components/ProfilePicture';
-import Services from './components/Services copy';
+import Services from './components/Services';
 import SplitContent from './components/SplitContent';
 import { carouselImages } from './data/carouselImages';
 
@@ -21,7 +21,7 @@ function App() {
         rightContent={<ProfilePicture />}
         spacing={8}
         asSection={true}
-        bg="var(--primary-light)"
+        bg="var(--secondary-color)"
       />
       <CarouselComponent images={carouselImages} />
       <Services />
