@@ -90,7 +90,9 @@ function Hero() {
         <Button
           as="a"
           href="#contact"
-          display="inline-block"
+          display="inline-flex"
+          alignItems="center"
+          justifyContent="center"
           padding="15px 40px"
           background="#d4a5b8"
           color="white"
@@ -98,6 +100,8 @@ function Hero() {
           fontWeight="500"
           boxShadow="0 4px 15px rgba(0, 0, 0, 0.1)"
           transition="all 0.3s ease"
+          lineHeight="1"
+          verticalAlign="middle"
           _hover={{
             background: '#c08fa3',
             transform: 'translateY(-2px)',
