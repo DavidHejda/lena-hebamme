@@ -54,7 +54,7 @@ const services: Service[] = [
     ),
     title: 'Hebammenberatung im Rahmen des Eltern-Kind-Passes',
     shortDescription:
-      'Im Rahmen des Hebammengesprächs im Eltern-Kind-Pass können Schwangere zwischen der 18. und 22.',
+      'Im Rahmen des Hebammengesprächs können Schwangere zwischen der 18. und 22. SSW eine kostenlose Hebammenberatung in Anspruch nehmen.',
     fullDescription:
       'Im Rahmen des Hebammengesprächs im Eltern-Kind-Pass können Schwangere zwischen der 18. und 22. Schwangerschaftswoche eine kostenlose Hebammenberatung in Anspruch nehmen. Dieses persönliche Gespräch bietet eine wertvolle Gelegenheit, sich mit einer Hebamme über alle Fragen rund um Schwangerschaft, Geburt, Wochenbett und Stillen auszutauschen.',
 
@@ -73,7 +73,7 @@ const services: Service[] = [
     fullDescription:
       'In einer persönlichen Beratung klären wir deine Fragen, nehmen gemeinsam Unsicherheiten und gehen gerne auf deine individuellen Wunschthemen ein. Je nach Bedarf kann ich folgende Untersuchungen und Kontrollen durchführen: Leopolds Handgriffe zur Lagebestimmung deines Kindes, Herztonkontrolle mit Dopton, Wachstumskontrolle deines Kindes, Blutdruckmessung, Inspektion der Brust und bei Bedarf auch eine vaginale Untersuchung. ',
     costs: [
-      'Da ich Wahlhebamme bin kommen dabei für ca. eine Stunde kosten von 85 Euro auf dich zu.',
+      'Da ich Wahlhebamme bin kommen dabei für ca. eine Stunde Kosten von 85 Euro auf dich zu. Die Krankenkasse übernimmt bei Kassenleistungen 80% des Kassentarifs.',
     ],
   },
   {
@@ -86,7 +86,7 @@ const services: Service[] = [
     ),
     title: 'Stillvorbereitung: ',
     shortDescription:
-      'In Geburtsvorbereitungskursen kommt das Thema Stillen oft zu kurz.',
+      'Individuelle Stillvorbereitung mit Zeit für eure Fragen - Für einen sicheren, entspannten und gelungenen Stillstart.',
     fullDescription:
       'In Geburtsvorbereitungskursen kommt das Thema Stillen oft zu kurz. Ich nehme mir daher gerne extra Zeit, um mit dir – und auf Wunsch auch mit deinem Partner – die wichtigsten Schritte für einen gelungenen Stillstart zu besprechen. Gemeinsam klären wir Fragen, und schaffen Sicherheit für die ersten Wochen.',
 
@@ -101,8 +101,10 @@ const services: Service[] = [
     shortDescription:
       'Ich begleite euch in den ersten Tagen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite.',
     fullDescription:
-      'Ich begleite euch in den ersten Tagen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite. Wir besprechen Themen wie Stillen, Versorgung des Babys und den Alltag mit dem Neugeborenen, beantworte eure Fragen und gebe wertvolle Tipps für den Start ins Familienleben.',
-    costs: ['Die Kosten richten sich je nach Umfang zwischen 95 bis 120 Euro.'],
+      'Ich begleite euch in den ersten Tagen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite. Wir besprechen Themen wie Stillen, Versorgung des Babys und den Alltag mit dem Neugeborenen, ich beantworte eure Fragen und gebe wertvolle Tipps für den Start ins Familienleben.',
+    costs: [
+      'Die Kosten richten sich je nach Umfang zwischen 95 bis 120 Euro. Die Krankenkasse übernimmt bei Kassenleistungen 80% des Kassentarifs.',
+    ],
   },
   {
     id: '5',
@@ -119,9 +121,9 @@ const services: Service[] = [
     icon: <FontAwesomeIcon icon={faYinYang} color="var(--primary-color)" />,
     title: 'Akupunktur',
     shortDescription:
-      'Akupunktur kann Schwangerschaftsbeschwerden wie Übelkeit, Rückenschmerzen, Schlafprobleme oder Ödeme lindern.',
+      'Akupunktur bietet Unterstützung in der Schwangerschaft, rund um die Geburt und im Wochenbett.',
     fullDescription:
-      'Akupunktur kann Schwangerschaftsbeschwerden wie Übelkeit, Rückenschmerzen, Schlafprobleme oder Ödeme lindern. Die geburtsvorbereitende Akupunktur unterstützt die Reifung des Muttermundes, verkürzt nachweislich die Geburtsdauer und sorgt für einen sanften Start in die Geburt. So begleite ich dich gezielt zu mehr Wohlbefinden und Sicherheit in dieser besonderen Zeit. Ich wende Akupunktur bereits an und begleite dich gerne dabei – die Behandlung ist derzeit noch kostenfrei, da ich mich noch in Ausbildung befinde.',
+      'Akupunktur kann Schwangerschaftsbeschwerden wie Übelkeit, Rückenschmerzen, Schlafprobleme oder Ödeme lindern. Die geburtsvorbereitende Akupunktur unterstützt die Reifung des Muttermundes, verkürzt nachweislich die Geburtsdauer und sorgt für einen sanften Start in die Geburt. So begleite ich dich gezielt zu mehr Wohlbefinden und Sicherheit in dieser besonderen Zeit.',
     costs: [
       'Die Behandlung ist derzeit noch kostenfrei, da ich mich noch in Ausbildung befinde.',
     ],
