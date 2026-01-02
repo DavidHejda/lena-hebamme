@@ -69,21 +69,7 @@ const CarouselComponent = ({ images }) => {
     autoplaySpeed: 3000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    slidesToShow: 3, // Show 3 slides at a time by default
-    responsive: [
-      {
-        breakpoint: 1024, // At 1024px viewport width or less
-        settings: {
-          slidesToShow: 2, // Show 2 slides
-        },
-      },
-      {
-        breakpoint: 600, // At 600px viewport width or less
-        settings: {
-          slidesToShow: 1, // Show 1 slide
-        },
-      },
-    ],
+    slidesToShow: useBreakpointValue({ base: 1, sm: 2, md: 3 }),
   };
 
   return (

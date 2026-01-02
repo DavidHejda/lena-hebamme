@@ -272,10 +272,10 @@ function Services() {
                   {/* Service title */}
                   <Heading
                     as="h3"
-                    fontSize="1.5rem"
+                    fontSize={{ base: '1.3rem', md: '1.5rem' }}
                     mb={4}
                     color="#2c2c2c"
-                    fontWeight="400"
+                    fontWeight={{ base: '500', md: '400' }}
                   >
                     {service.title}
                   </Heading>
