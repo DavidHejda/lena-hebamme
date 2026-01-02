@@ -90,19 +90,9 @@ const CarouselComponent = ({ images }) => {
     <Box
       id="home"
       maxWidth="100%"
-      // margin="3vh"
       px={{ base: '4', md: '6', lg: '8' }}
       margin="4vh auto"
     >
-      {/* <Heading
-        as="h1"
-        sx={{ fontFamily: "'Ibm Plex Mono', cursive" }}
-        textAlign={'center'}
-        marginTop={headerMargin}
-        marginBottom={headerMargin}
-        fontSize={textSizeHeader}
-        px={{ base: '5%', sm: 0 }} // Adjust padding for responsiveness
-      ></Heading> */}
       <Box maxWidth="100%" mx="auto" overflow="hidden">
         <Slider {...settings}>
           {images.map((img, idx) => (
@@ -112,19 +102,19 @@ const CarouselComponent = ({ images }) => {
               display="flex"
               alignItems="center"
               justifyContent="center"
-              px="2px" // Consistent padding for spacing
+              px="2px"
             >
               <Image
                 src={img.url}
                 alt={`Slide ${idx + 1}`}
-                width="100%" // Use 100% of the width for each slide
-                height="100%" // Match container height
-                objectFit="cover" // This will cover the area of the container with the image
-                objectPosition="center" // This will center the image within the container
+                width="100%"
+                height="100%"
+                objectFit="cover"
+                objectPosition="center"
                 sx={{
-                  display: 'block', // Ensures the image is a block-level element
-                  maxWidth: '100%', // This ensures the image is not wider than the slide
-                  maxHeight: '100%', // This ensures the image fits within the container
+                  display: 'block',
+                  maxWidth: '100%',
+                  maxHeight: '100%',
                 }}
               />
             </Box>

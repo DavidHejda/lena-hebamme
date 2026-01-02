@@ -16,14 +16,7 @@ const textSections = [
 
 function About() {
   return (
-    <Box width="100%">
-      {/* <Heading
-        as="h2"
-        fontSize={{ base: '2rem', md: '3.5rem' }}
-        fontWeight="300"
-        mb={8}
-        textAlign="center"
-      > */}
+    <Box width="100%" id="about">
       <Heading
         as="h1"
         fontSize={{ base: '2rem', md: '3.5rem' }}
@@ -42,8 +35,6 @@ function About() {
             fontWeight="300"
             lineHeight="1.5"
             fontSize={{ base: '1.2rem' }}
-            // lineHeight="1.6"
-            // fontSize={{ md: '1.3rem' }}
             textAlign="justify"
             color="gray.700"
           >

@@ -1,4 +1,3 @@
-// SimpleGrid is imported for the commented three-column layout option below
 import { Box, Button, Heading, Image, Text, VStack } from '@chakra-ui/react';
 import logo from '../assets/logo-soft.png';
 
@@ -23,7 +22,6 @@ function Hero() {
     <Box
       id="home"
       as="section"
-      // background="linear-gradient(135deg, #e8c5d4 0%, #f5e6e8 100%)"
       py={{ base: '80px', md: '120px' }}
       px={{ base: '20px', md: '40px' }}
       textAlign="center"

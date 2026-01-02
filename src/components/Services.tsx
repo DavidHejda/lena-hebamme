@@ -59,7 +59,7 @@ const services: Service[] = [
       'Im Rahmen des Hebammengesprächs im Eltern-Kind-Pass können Schwangere zwischen der 18. und 22. Schwangerschaftswoche eine kostenlose Hebammenberatung in Anspruch nehmen. Dieses persönliche Gespräch bietet eine wertvolle Gelegenheit, sich mit einer Hebamme über alle Fragen rund um Schwangerschaft, Geburt, Wochenbett und Stillen auszutauschen.',
 
     costs: [
-      'Die kosten von 67 Euro werden vollständig von der Krankenkasse übernommen.',
+      'Die Kosten von 67 Euro werden vollständig von der Krankenkasse übernommen.',
     ],
   },
   {
@@ -102,7 +102,7 @@ const services: Service[] = [
       'Ich begleite euch in den ersten Tagen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite.',
     fullDescription:
       'Ich begleite euch in den ersten Tagen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite. Wir besprechen Themen wie Stillen, Versorgung des Babys und den Alltag mit dem Neugeborenen, beantworte eure Fragen und gebe wertvolle Tipps für den Start ins Familienleben.',
-    costs: ['Die kosten richten sich je nach Umfang zwischen 95 bis 120 Euro.'],
+    costs: ['Die Kosten richten sich je nach Umfang zwischen 95 bis 120 Euro.'],
   },
   {
     id: '5',
