@@ -91,7 +91,7 @@ const services: Service[] = [
       'In Geburtsvorbereitungskursen kommt das Thema Stillen oft zu kurz. Ich nehme mir daher gerne extra Zeit, um mit dir – und auf Wunsch auch mit deinem Partner – die wichtigsten Schritte für einen gelungenen Stillstart zu besprechen. Gemeinsam klären wir Fragen, und schaffen Sicherheit für die ersten Wochen.',
 
     costs: [
-      'Die Kosten richten sich nach Umfang und beginnen bei 100 Euro pro Stunde.',
+      'Die Kosten richten sich nach Umfang und beginnen bei 90 Euro pro Stunde.',
     ],
   },
   {
@@ -103,7 +103,7 @@ const services: Service[] = [
     fullDescription:
       'Ich begleite euch in den ersten Tagen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite. Wir besprechen Themen wie Stillen, Versorgung des Babys und den Alltag mit dem Neugeborenen, ich beantworte eure Fragen und gebe wertvolle Tipps für den Start ins Familienleben.',
     costs: [
-      'Die Kosten richten sich je nach Umfang zwischen 95 bis 120 Euro. Die Krankenkasse übernimmt bei Kassenleistungen 80% des Kassentarifs.',
+      'Die Kosten richten sich je nach Umfang zwischen 85 bis 100 Euro. Die Krankenkasse übernimmt bei Kassenleistungen 80% des Kassentarifs.',
     ],
   },
   {
@@ -161,8 +161,8 @@ const services: Service[] = [
       'Eine Sammlung hilfreicher und vertrauenswürdiger Links, die euch auf dem Weg ins Elternwerden informieren und unterstützen.',
     links: [
       {
-        title: 'Hebammensuche ÖHG',
-        url: 'https://hebammen.at/eltern/hebammensuche',
+        title: 'Hebammenleistungen, die die Krankenkasse übernimmt',
+        url: 'https://hebammen.at/eltern/kosten/',
       },
       {
         title: 'Vertragshebammen der ÖGK',

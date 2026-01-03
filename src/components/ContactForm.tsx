@@ -6,9 +6,11 @@ import {
   FormErrorMessage,
   FormLabel,
   Input,
+  Text,
   Textarea,
   VStack,
 } from '@chakra-ui/react';
+import { useState } from 'react';
 
 /**
  * ContactForm Component
@@ -27,7 +29,9 @@ interface ContactFormProps {
   isConsentGiven: boolean;
   setIsConsentGiven: (value: boolean) => void;
   errors: IErrors;
-  handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+  handleChange: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
 }
 
@@ -38,6 +42,17 @@ function ContactForm({
   handleChange,
   handleSubmit,
 }: ContactFormProps) {
+  const [messageLength, setMessageLength] = useState(0);
+  const maxLength = 1000;
+
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const value = e.target.value;
+    if (value.length <= maxLength) {
+      setMessageLength(value.length);
+      handleChange(e);
+    }
+  };
+
   return (
     <Box bg="var(--secondary-color)" padding="2.5rem" borderRadius="15px">
       <form onSubmit={handleSubmit}>
@@ -145,10 +160,11 @@ function ContactForm({
               name="message"
               rows={5}
               required
+              maxLength={maxLength}
               padding="12px"
               border="1px solid #e0e0e0"
               borderRadius="8px"
-              onChange={handleChange}
+              onChange={handleMessageChange}
               fontSize="1rem"
               resize="vertical"
               backgroundColor="white"
@@ -157,6 +173,14 @@ function ContactForm({
                 boxShadow: '0 0 0 3px rgba(212, 165, 184, 0.1)',
               }}
             />
+            <Text
+              fontSize="0.875rem"
+              color={messageLength >= maxLength ? '#e53e3e' : '#666'}
+              textAlign="right"
+              mt={1}
+            >
+              {messageLength} / {maxLength} Zeichen
+            </Text>
           </FormControl>
           <FormControl id="consent">
             <Checkbox
@@ -205,4 +229,3 @@ function ContactForm({
 }
 
 export default ContactForm;
-

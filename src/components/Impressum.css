@@ -1,0 +1,14 @@
+.impressum-content {
+  text-align: left;
+}
+
+.impressum-content h3 {
+  color: var(--text-dark);
+  margin-top: 1rem;
+}
+
+.impressum-content p {
+  line-height: 1.8;
+  color: var(--text-light);
+}
+

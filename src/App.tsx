@@ -1,5 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import './App.css';
+import logo from './assets/logo-soft.png';
 import About from './components/About';
 import CarouselComponent from './components/CarouselComponent';
 import Contact from './components/Contact';
@@ -25,7 +26,7 @@ function App() {
       />
       <CarouselComponent images={carouselImages} />
       <Services />
-      <Contact />
+      <Contact backgroundLogo={logo} logoOpacity={0.3} logoRepeat={true} />
       <Footer />
     </Box>
   );

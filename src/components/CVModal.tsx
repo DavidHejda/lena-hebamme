@@ -8,7 +8,6 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react';
-import logo from '../assets/logo-soft.png';
 import './CVModal.css';
 import Modal from './Modal';
 
@@ -67,20 +66,6 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
       displayModalHeader={false}
     >
       <Box className="cv-modal-content">
-        {/* Corner logos - subtle decoration */}
-        <Box className="cv-corner-logo cv-corner-logo-top-left">
-          <img src={logo} alt="Logo" />
-        </Box>
-        <Box className="cv-corner-logo cv-corner-logo-top-right">
-          <img src={logo} alt="Logo" />
-        </Box>
-        <Box className="cv-corner-logo cv-corner-logo-bottom-left">
-          <img src={logo} alt="Logo" />
-        </Box>
-        <Box className="cv-corner-logo cv-corner-logo-bottom-right">
-          <img src={logo} alt="Logo" />
-        </Box>
-
         {/* Three-column layout */}
         <Grid
           templateColumns={{ base: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr' }}
@@ -276,8 +261,8 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
             </Heading>
 
             <VStack align="stretch" spacing={1.5}>
-              {furtherEducation.map((item) => (
-                <Box className="cv-item cv-item-compact">
+              {furtherEducation.map((item, index) => (
+                <Box key={index} className="cv-item cv-item-compact">
                   <Box
                     display="flex"
                     justifyContent="space-between"
