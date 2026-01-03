@@ -103,6 +103,12 @@ function Impressum({ isOpen, onClose }: ImpressumProps) {
               seit 05.01.2026
             </Text>
           </Box>
+
+          <Box>
+            <Heading as="h3" fontSize="1.2rem" fontWeight="600" mb={2}>
+              Logo © Hermann Vogtenhuber
+            </Heading>
+          </Box>
         </VStack>
       </Box>
     </Modal>
