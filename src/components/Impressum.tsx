@@ -1,7 +1,6 @@
 import { Box, Heading, Text, VStack } from '@chakra-ui/react';
-import { useState } from 'react';
-import Modal from './Modal';
 import './Impressum.css';
+import Modal from './Modal';
 
 interface ImpressumProps {
   isOpen: boolean;
@@ -111,4 +110,3 @@ function Impressum({ isOpen, onClose }: ImpressumProps) {
 }
 
 export default Impressum;
-
