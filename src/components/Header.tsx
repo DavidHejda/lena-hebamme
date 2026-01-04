@@ -9,8 +9,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-// import logo from '../assets/logo.png';
-import nameLeft from '../assets/Lena_Logo_Name_Left.png';
+import nameLeft from '../assets/Lena_Logo_Name_left.png';
 import sign from '../assets/Lena_Logo_Sign.png';
 import './Header.css';
 
