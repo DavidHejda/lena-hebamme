@@ -77,14 +77,14 @@ function Header() {
             <Image
               src={sign}
               alt="Logo"
-              height="75px"
+              height={{ base: '40px', md: '75px' }}
               width="auto"
               objectFit="contain"
             />
             <Image
               src={nameLeft}
               alt="Logo"
-              height="75px"
+              height={{ base: '40px', md: '75px' }}
               width="auto"
               objectFit="contain"
             />
