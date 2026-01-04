@@ -24,6 +24,10 @@ function About() {
         mb={8}
         letterSpacing="2px"
         textAlign="center"
+        // fontFamily="'Cormorant', serif"
+        // letterSpacing="2px"
+        // letterSpacing="-2px"
+        // fontFamily="'Playfair Display', serif"
       >
         Über Mich
       </Heading>

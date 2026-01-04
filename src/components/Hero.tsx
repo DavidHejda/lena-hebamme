@@ -1,6 +1,5 @@
 import { Box, Button, Heading, Image, Text, VStack } from '@chakra-ui/react';
-import logo from '../assets/logo-soft.png';
-
+import lenaLogo from '../assets/Lena_Logo.png';
 /**
  * Hero Component
  *
@@ -37,18 +36,19 @@ function Hero() {
         transform="translate(-50%, -50%)"
         width="100%"
         height="100%"
-        opacity={0.5}
+        // opacity={0.5}
         zIndex="0"
         pointerEvents="none"
+        backgroundColor="var(--secondary-color)"
       >
-        <Image
+        {/* <Image
           src={logo}
           alt=""
           width="100%"
           height="100%"
           objectFit="contain"
           objectPosition="center"
-        />
+        /> */}
       </Box>
       <Box maxWidth="1200px" mx="auto" position="relative" zIndex="1">
         <Heading
@@ -57,19 +57,37 @@ function Hero() {
           fontWeight="300"
           mb={8}
           letterSpacing="2px"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          gap={2}
         >
-          Willkommen
+          {/* Willkommen */}
+          {/* <Image
+            src={sign}
+            alt="Logo"
+            height="75px"
+            width="auto"
+            objectFit="contain"
+          />
+          <Image
+            src={nameLeft}
+            alt="Logo"
+            height="75px"
+            width="auto"
+            objectFit="contain"
+          /> */}
+          <Image
+            src={lenaLogo}
+            alt="Logo"
+            height="200px"
+            width="auto"
+            objectFit="contain"
+          />
         </Heading>
 
         {/* Single column layout - currently active */}
-        <VStack
-          align="stretch"
-          spacing={6}
-          maxWidth="800px"
-          mx="auto"
-          mb={8}
-          textAlign="left"
-        >
+        <VStack align="stretch" spacing={6} maxWidth="800px" mx="auto" mb={8}>
           {textSections.map((text, index) => (
             <Text
               key={index}

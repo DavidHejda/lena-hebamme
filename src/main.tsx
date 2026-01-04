@@ -16,7 +16,6 @@ const theme = extendTheme({
   styles: {
     global: {
       'html, body': {
-        paddingTop: '2rem',
         background: 'white',
         color: 'black',
       },

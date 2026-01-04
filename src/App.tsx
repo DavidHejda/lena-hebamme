@@ -22,7 +22,9 @@ function App() {
         rightContent={<ProfilePicture />}
         spacing={8}
         asSection={true}
-        bg="var(--secondary-color)"
+        // bg="var(--secondary-color)"
+        backgroundLogo={logo}
+        logoOpacity={0.5}
       />
       <CarouselComponent images={carouselImages} />
       <Services />

@@ -8,11 +8,28 @@ import {
   Link,
   useDisclosure,
 } from '@chakra-ui/react';
-import logo from '../assets/logo.png';
+import { useEffect, useState } from 'react';
+// import logo from '../assets/logo.png';
+import nameLeft from '../assets/Lena_Logo_Name_Left.png';
+import sign from '../assets/Lena_Logo_Sign.png';
 import './Header.css';
 
 function Header() {
   const { isOpen, onToggle, onClose } = useDisclosure();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show header navbar when scrolled past 150px
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    // Check initial scroll position
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { href: '#home', label: 'Home' },
@@ -24,19 +41,26 @@ function Header() {
   return (
     <Box
       as="header"
-      position="sticky"
+      position="fixed"
       top={0}
+      left={0}
+      right={0}
       bg="white"
-      boxShadow="0 2px 10px rgba(0, 0, 0, 0.1)"
+      boxShadow={isScrolled ? '0 2px 10px rgba(0, 0, 0, 0.1)' : 'none'}
       zIndex={1000}
       className="header"
+      transform={isScrolled ? 'translateY(0)' : 'translateY(-100%)'}
+      transition="transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease"
+      opacity={isScrolled ? 1 : 0}
+      visibility={isScrolled ? 'visible' : 'hidden'}
+      pointerEvents={isScrolled ? 'auto' : 'none'}
     >
       <Box
         as="nav"
         maxW="1200px"
         mx="auto"
         px={{ base: '20px', md: '20px' }}
-        py="1rem"
+        py={isScrolled ? '1rem' : 0}
       >
         <Flex
           justify="space-between"
@@ -52,9 +76,16 @@ function Header() {
             _hover={{ textDecoration: 'none' }}
           >
             <Image
-              src={logo}
+              src={sign}
               alt="Logo"
-              height="60px"
+              height="75px"
+              width="auto"
+              objectFit="contain"
+            />
+            <Image
+              src={nameLeft}
+              alt="Logo"
+              height="75px"
               width="auto"
               objectFit="contain"
             />
