@@ -102,6 +102,8 @@ const Contact = ({
           mb={12}
           letterSpacing="2px"
           textAlign="center"
+          fontFamily="'Playfair Display', serif"
+          color="#2c2c2c"
         >
           Kontakt
         </Heading>

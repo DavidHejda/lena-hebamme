@@ -153,6 +153,7 @@ function Header() {
                     bg: 'var(--primary-color)',
                     transition: 'width 0.3s ease',
                   }}
+                  fontFamily="'Playfair Display', serif"
                 >
                   {link.label}
                 </Link>

@@ -84,7 +84,7 @@ const services: Service[] = [
         color="var(--primary-color)"
       />
     ),
-    title: 'Stillvorbereitung: ',
+    title: 'Stillvorbereitung',
     shortDescription:
       'Individuelle Stillvorbereitung mit Zeit für eure Fragen - Für einen sicheren, entspannten und gelungenen Stillstart.',
     fullDescription:
@@ -244,6 +244,8 @@ function Services() {
             mb={12}
             letterSpacing="2px"
             textAlign="center"
+            fontFamily="'Playfair Display', serif"
+            color="#2c2c2c"
           >
             Meine Leistungen
           </Heading>
@@ -278,6 +280,7 @@ function Services() {
                     mb={4}
                     color="#2c2c2c"
                     fontWeight={{ base: '500', md: '400' }}
+                    fontFamily="'Playfair Display', serif"
                   >
                     {service.title}
                   </Heading>
