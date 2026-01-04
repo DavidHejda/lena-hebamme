@@ -109,9 +109,9 @@ const services: Service[] = [
   {
     id: '5',
     icon: <FontAwesomeIcon icon={faTape} color="var(--primary-color)" />,
-    title: 'Taping in Schwangerschaft und Wochenbett',
+    title: 'Taping',
     shortDescription:
-      'Taping kann werdenden und frischgebackenen Müttern gezielt Unterstützung und Entlastung bieten',
+      'Taping kann werdenden und frischgebackenen Müttern gezielt Unterstützung und Entlastung bieten.',
     fullDescription:
       'Taping kann werdenden und frischgebackenen Müttern gezielt Unterstützung und Entlastung bieten. In der Schwangerschaft helfe ich mit speziellen Tape-Anlagen, um Rücken, Becken und Gelenke zu entlasten und beschwerdefrei durch die Wochen zu kommen. Im Wochenbett kann Taping den Rückbildungsprozess, die Körperhaltung und muskuläre Stabilität fördern. Sogar Neugeborene können von Tapes, sei es bei Bauchbeschwerden oder Stillproblemen profitieren. Ich zeige dir, wie die Tapes wirken, setze sie gezielt ein.',
     costs: ['Taping ohne Termin: 30 Euro', 'In der Beratung/Visite: 15 Euro'],
