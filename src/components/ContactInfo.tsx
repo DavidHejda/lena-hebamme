@@ -8,12 +8,12 @@ import { Box, Heading, Text, VStack } from '@chakra-ui/react';
 
 const contactInformation = [
   {
-    label: 'Telefon',
-    value: ['+43 660 6705003'],
-  },
-  {
     label: 'E-Mail',
     value: ['hebammetiefenthaler@gmail.com'],
+  },
+  {
+    label: 'Telefon',
+    value: ['+43 660 6705003'],
   },
   {
     label: 'Telefonzeiten',
