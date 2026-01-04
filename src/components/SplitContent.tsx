@@ -26,6 +26,7 @@ interface SplitContentProps {
   maxWidth?: string;
   backgroundLogo?: string;
   logoOpacity?: number;
+  id?: string;
 }
 
 function SplitContent({
@@ -38,6 +39,7 @@ function SplitContent({
   maxWidth = '1200px',
   backgroundLogo,
   logoOpacity = 0.1,
+  id = '',
 }: SplitContentProps) {
   const content = (
     <Flex
@@ -70,6 +72,8 @@ function SplitContent({
         px={{ base: '20px', md: '40px' }}
         position="relative"
         overflow="hidden"
+        id={id}
+        scrollMarginTop="80px"
       >
         {/* Background logo */}
         {backgroundLogo && (

@@ -16,7 +16,7 @@ const textSections = [
 
 function About() {
   return (
-    <Box width="100%" id="about">
+    <Box width="100%">
       <Heading
         as="h1"
         fontSize={{ base: '2rem', md: '3.5rem' }}
@@ -24,11 +24,8 @@ function About() {
         mb={8}
         letterSpacing="2px"
         textAlign="center"
-        // letterSpacing="2px"
-        // letterSpacing="-2px"
         fontFamily="'Playfair Display', serif"
         color="#2c2c2c"
-        // fontFamily="'Cormorant', serif"
       >
         Über Mich
       </Heading>

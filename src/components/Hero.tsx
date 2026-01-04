@@ -27,6 +27,7 @@ function Hero() {
       color="#2c2c2c"
       position="relative"
       overflow="hidden"
+      scrollMarginTop="0px"
     >
       {/* Background logo */}
       <Box

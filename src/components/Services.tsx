@@ -235,6 +235,7 @@ function Services() {
         bg="var(--secondary-color)"
         py={{ base: '60px', md: '80px' }}
         px={{ base: '20px', md: '40px' }}
+        scrollMarginTop="80px"
       >
         <Box maxWidth="1200px" mx="auto">
           <Heading

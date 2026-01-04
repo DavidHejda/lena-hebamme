@@ -64,6 +64,7 @@ const Contact = ({
       px={{ base: '20px', md: '40px' }}
       position="relative"
       overflow="hidden"
+      scrollMarginTop="80px"
     >
       {/* Background logo */}
       {logoSource && (
