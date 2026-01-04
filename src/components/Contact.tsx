@@ -80,8 +80,7 @@ const Contact = ({
           pointerEvents="none"
           backgroundImage={logoRepeat ? `url(${logoSource})` : 'none'}
           backgroundRepeat={logoRepeat ? 'repeat' : 'no-repeat'}
-          backgroundSize={logoRepeat ? 'auto' : 'contain'}
-          // backgroundPosition="center"
+          backgroundSize={logoRepeat ? '50% auto' : 'contain'}
         >
           {!logoRepeat && (
             <Image
