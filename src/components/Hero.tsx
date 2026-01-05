@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Image, Text, VStack } from '@chakra-ui/react';
+import { Box, Button, Image, Text, VStack } from '@chakra-ui/react';
 import lenaLogo from '../assets/Lena_Logo.png';
 /**
  * Hero Component
@@ -13,7 +13,7 @@ import lenaLogo from '../assets/Lena_Logo.png';
 const textSections = [
   'Willkommen in einer Zeit des Wandels, der Kraft und des Wachsens. Schwangerschaft, Geburt und das Ankommen als Mutter und als Familie sind zutiefst persönliche Erfahrungen – geprägt von Gefühlen, Fragen, Stärke und manchmal auch Unsicherheit. In all dem darfst du dich gehalten, gesehen und ernst genommen fühlen.',
   'Meine Vision ist es, Frauen und Familien in dieser besonderen Lebensphase mit Ruhe, Klarheit und Herz zu begleiten. Gemeinsam schaffen wir einen Raum, in dem du dich sicher fühlst, in dem deine Intuition Platz hat und deine Entscheidungen respektiert werden. Auf Augenhöhe, ohne Druck, ohne Bewertung – dafür mit Vertrauen, Zeit und fachlicher Kompetenz.',
-  'Geburt darf kraftvoll sein. Sie darf leise sein. Sie darf genauso sein, wie sie für dich richtig ist. Mein Wunsch ist, dass du deinen Weg selbstbestimmt gehen kannst – begleitet von jemandem, auf den du dich verlassen kannst. Schön, dass du hier bist.',
+  'Gerne begleite ich dich und deine Familie auf eurem selbstbestimmten Weg durch Schwangerschaft, Geburt und den Start ins Familienleben im Raum Salzburg und Umgebung. Mit Aufmerksamkeit, Herz und Erfahrung bin ich für euch da – so, wie ihr es gerade braucht.',
 ];
 
 function Hero() {
@@ -30,7 +30,7 @@ function Hero() {
       scrollMarginTop="0px"
     >
       {/* Background logo */}
-      <Box
+      {/* <Box
         position="absolute"
         top="50%"
         left="50%"
@@ -42,17 +42,17 @@ function Hero() {
         pointerEvents="none"
         backgroundColor="var(--secondary-color)"
       >
-        {/* <Image
+        <Image
           src={logo}
           alt=""
           width="100%"
           height="100%"
           objectFit="contain"
           objectPosition="center"
-        /> */}
-      </Box>
-      <Box maxWidth="1200px" mx="auto" position="relative" zIndex="1">
-        <Heading
+        />
+      </Box> */}
+      <Box maxWidth="1200px" mx="auto" position="relative" zIndex="1" mb={0}>
+        {/* <Heading
           as="h1"
           fontSize={{ base: '2rem', md: '3.5rem' }}
           fontWeight="300"
@@ -62,9 +62,9 @@ function Hero() {
           alignItems="center"
           justifyContent="center"
           gap={2}
-        >
-          {/* Willkommen */}
-          {/* <Image
+        > */}
+        {/* Willkommen */}
+        {/* <Image
             src={sign}
             alt="Logo"
             height="75px"
@@ -78,14 +78,16 @@ function Hero() {
             width="auto"
             objectFit="contain"
           /> */}
-          <Image
-            src={lenaLogo}
-            alt="Logo"
-            height="200px"
-            width="auto"
-            objectFit="contain"
-          />
-        </Heading>
+        <Image
+          src={lenaLogo}
+          alt="Logo"
+          height="200px"
+          width="auto"
+          objectFit="contain"
+          objectPosition="center"
+          justifySelf="center"
+        />
+        {/* </Heading> */}
 
         {/* Single column layout - currently active */}
         <VStack align="stretch" spacing={6} maxWidth="800px" mx="auto" mb={8}>
