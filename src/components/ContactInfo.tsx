@@ -30,7 +30,11 @@ const contactInformation = [
 
 const ContactInfo = () => {
   return (
-    <Box bg="var(--secondary-color)" padding="2.5rem" borderRadius="15px">
+    <Box
+      bg="var(--primary-logo-color-background)"
+      padding="2.5rem"
+      borderRadius="15px"
+    >
       <VStack align="stretch" spacing={8}>
         {contactInformation.map((item) => (
           <Box key={item.label}>

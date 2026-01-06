@@ -53,7 +53,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--primary-color);
+  background: var(--primary-logo-color);
   transition: var(--transition);
 }
 
@@ -62,7 +62,7 @@
 }
 
 .nav-menu a:hover {
-  color: var(--primary-color);
+  color: var(--primary-logo-color);
 }
 
 .menu-toggle {

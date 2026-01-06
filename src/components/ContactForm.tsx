@@ -54,7 +54,11 @@ function ContactForm({
   };
 
   return (
-    <Box bg="var(--secondary-color)" padding="2.5rem" borderRadius="15px">
+    <Box
+      bg="var(--primary-logo-color-background)"
+      padding="2.5rem"
+      borderRadius="15px"
+    >
       <form onSubmit={handleSubmit}>
         <VStack align="stretch" spacing={6}>
           <FormControl isRequired>
@@ -78,7 +82,7 @@ function ContactForm({
               backgroundColor="white"
               onChange={handleChange}
               _focus={{
-                borderColor: '#d4a5b8',
+                borderColor: 'var(--primary-logo-color)',
                 boxShadow: '0 0 0 3px rgba(212, 165, 184, 0.1)',
               }}
             />
@@ -108,7 +112,7 @@ function ContactForm({
               backgroundColor="white"
               onChange={handleChange}
               _focus={{
-                borderColor: '#d4a5b8',
+                borderColor: 'var(--primary-logo-color)',
                 boxShadow: '0 0 0 3px rgba(212, 165, 184, 0.1)',
               }}
             />
@@ -137,7 +141,7 @@ function ContactForm({
               backgroundColor="white"
               onChange={handleChange}
               _focus={{
-                borderColor: '#d4a5b8',
+                borderColor: 'var(--primary-logo-color)',
                 boxShadow: '0 0 0 3px rgba(212, 165, 184, 0.1)',
               }}
             />
@@ -169,7 +173,7 @@ function ContactForm({
               resize="vertical"
               backgroundColor="white"
               _focus={{
-                borderColor: '#d4a5b8',
+                borderColor: 'var(--primary-logo-color)',
                 boxShadow: '0 0 0 3px rgba(212, 165, 184, 0.1)',
               }}
             />
@@ -192,8 +196,8 @@ function ContactForm({
                   borderColor: '#e0e0e0',
                 },
                 '&[data-checked] > span:first-of-type': {
-                  bg: '#d4a5b8',
-                  borderColor: '#d4a5b8',
+                  bg: 'var(--primary-logo-color)',
+                  borderColor: 'var(--primary-logo-color)',
                 },
               }}
             >
@@ -205,7 +209,7 @@ function ContactForm({
             type="submit"
             width="100%"
             padding="15px"
-            background="#d4a5b8"
+            background="var(--primary-logo-color-light)"
             color="white"
             border="none"
             borderRadius="8px"
@@ -215,7 +219,7 @@ function ContactForm({
             transition="all 0.3s ease"
             isDisabled={!isConsentGiven}
             _hover={{
-              background: '#c08fa3',
+              background: 'var(--primary-logo-color)',
               transform: 'translateY(-2px)',
               boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
             }}

@@ -52,9 +52,9 @@
 
 .cv-item:hover {
   background: rgba(245, 230, 232, 0.3);
-  border-left-color: #d4a5b8;
+  border-left-color: var(--secondary-logo-color);
   transform: translateX(3px);
-  box-shadow: 0 3px 8px rgba(212, 165, 184, 0.15);
+  box-shadow: 0 3px 8px rgba(var(--secondary-logo-color), 0.15);
 }
 
 /* Ensure no scrolling on desktop */

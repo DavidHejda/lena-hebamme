@@ -6,10 +6,18 @@
 }
 
 :root {
+  --primary-logo-color: #cc5365;
+  /* --primary-logo-color-light: #cc5365; */
+  /* --primary-logo-color-light: #d16474; */
+  --primary-logo-color-light: #d67584;
+  --primary-logo-color-background: #faeef0;
+  --primary-logo-color-dark: #b84b5b;
+  --secondary-logo-color: #da9a27;
   --primary-color: #d4a5b8;
   --primary-dark: #c08fa3;
   --primary-light: #e8c5d4;
-  --secondary-color: #f5e6e8;
+  /* --secondary-color: #f5e6e8; */
+  --secondary-color: #faeef0;
   --text-dark: #2c2c2c;
   --text-light: #666;
   --white: #ffffff;

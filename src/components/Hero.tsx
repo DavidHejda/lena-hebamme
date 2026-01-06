@@ -28,6 +28,7 @@ function Hero() {
       position="relative"
       overflow="hidden"
       scrollMarginTop="0px"
+      backgroundColor="var(--primary-logo-color-background)"
     >
       <Image
         src={lenaLogo}
@@ -49,7 +50,7 @@ function Hero() {
             fontSize={{ base: '1.2rem' }}
             lineHeight="1.5"
             textAlign="center"
-            color="#2c2c2c"
+            color="var(--secondary-logo-color)"
             fontFamily="'Playfair Display', serif"
             // letterSpacing="2px"
           >
@@ -75,7 +76,8 @@ function Hero() {
           alignItems="center"
           justifyContent="center"
           padding="15px 40px"
-          background="#d4a5b8"
+          // background="#d4a5b8"
+          background="var(--primary-logo-color-light)"
           color="white"
           borderRadius="50px"
           fontWeight="500"
@@ -84,8 +86,8 @@ function Hero() {
           lineHeight="1"
           verticalAlign="middle"
           _hover={{
-            background: '#c08fa3',
-            transform: 'translateY(-2px)',
+            background: 'var(--primary-logo-color-dark)',
+            transform: 'translateY(-2 px)',
             boxShadow: '0 6px 20px rgba(0, 0, 0, 0.1)',
           }}
         >

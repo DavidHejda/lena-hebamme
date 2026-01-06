@@ -84,7 +84,7 @@ function Modal({
         {displayModalHeader && (icon || title) && (
           <ModalHeader
             textAlign="center"
-            borderBottom="1px solid var(--border-color)"
+            borderBottom="1px solid var(--primary-logo-color-light)"
             pb={6}
             pt={10}
           >

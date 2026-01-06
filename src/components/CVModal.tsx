@@ -86,7 +86,12 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
               alignItems="center"
               gap={2}
             >
-              <Box width="3px" height="24px" bg="#d4a5b8" borderRadius="2px" />
+              <Box
+                width="3px"
+                height="24px"
+                bg="var(--secondary-logo-color)"
+                borderRadius="2px"
+              />
               Bildung
             </Heading>
 
@@ -191,7 +196,12 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
               alignItems="center"
               gap={2}
             >
-              <Box width="3px" height="24px" bg="#d4a5b8" borderRadius="2px" />
+              <Box
+                width="3px"
+                height="24px"
+                bg="var(--secondary-logo-color)"
+                borderRadius="2px"
+              />
               Berufserfahrung
             </Heading>
 
@@ -256,7 +266,12 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
               alignItems="center"
               gap={2}
             >
-              <Box width="3px" height="24px" bg="#d4a5b8" borderRadius="2px" />
+              <Box
+                width="3px"
+                height="24px"
+                bg="var(--secondary-logo-color)"
+                borderRadius="2px"
+              />
               Fort- und Weiterbildungen
             </Heading>
 

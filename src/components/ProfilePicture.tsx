@@ -51,7 +51,7 @@ function ProfilePicture({
         </Box>
         <Button
           onClick={() => setIsCVModalOpen(true)}
-          background="#d4a5b8"
+          background="var(--primary-logo-color-light)"
           color="white"
           border="none"
           borderRadius="8px"
@@ -61,7 +61,7 @@ function ProfilePicture({
           cursor="pointer"
           transition="all 0.3s ease"
           _hover={{
-            background: '#c08fa3',
+            background: 'var(--primary-logo-color-dark)',
             transform: 'translateY(-2px)',
             boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
           }}

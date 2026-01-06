@@ -138,7 +138,7 @@ function Header() {
                   width={{ base: '100%', md: 'auto' }}
                   py={{ base: '1rem', md: 0 }}
                   _hover={{
-                    color: 'var(--primary-color)',
+                    color: 'var(--primary-logo-color-light)',
                     _after: {
                       width: '100%',
                     },
@@ -150,7 +150,7 @@ function Header() {
                     left: 0,
                     width: 0,
                     height: '2px',
-                    bg: 'var(--primary-color)',
+                    bg: 'var(--primary-logo-color-light)',
                     transition: 'width 0.3s ease',
                   }}
                   fontFamily="'Playfair Display', serif"

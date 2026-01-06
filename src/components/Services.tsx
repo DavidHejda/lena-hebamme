@@ -40,18 +40,15 @@ interface Service {
   }[];
 }
 
+const iconColor = 'var(--primary-logo-color-light)';
+
 /**
  * Services data array
  */
 const services: Service[] = [
   {
     id: '1',
-    icon: (
-      <FontAwesomeIcon
-        icon={faHandsHoldingChild}
-        color="var(--primary-color)"
-      />
-    ),
+    icon: <FontAwesomeIcon icon={faHandsHoldingChild} color={iconColor} />,
     title: 'Hebammenberatung im Rahmen des Eltern-Kind-Passes',
     shortDescription:
       'Im Rahmen des Hebammengesprächs können Schwangere zwischen der 18. und 22. SSW eine kostenlose Hebammenberatung in Anspruch nehmen.',
@@ -64,9 +61,7 @@ const services: Service[] = [
   },
   {
     id: '2',
-    icon: (
-      <FontAwesomeIcon icon={faPersonPregnant} color="var(--primary-color)" />
-    ),
+    icon: <FontAwesomeIcon icon={faPersonPregnant} color={iconColor} />,
     title: 'Schwangerschaftsberatung',
     shortDescription:
       'In einer persönlichen Beratung klären wir deine Fragen, nehmen gemeinsam Unsicherheiten und gehen gerne auf deine individuellen Wunschthemen ein.',
@@ -78,12 +73,7 @@ const services: Service[] = [
   },
   {
     id: '3',
-    icon: (
-      <FontAwesomeIcon
-        icon={faPersonBreastfeeding}
-        color="var(--primary-color)"
-      />
-    ),
+    icon: <FontAwesomeIcon icon={faPersonBreastfeeding} color={iconColor} />,
     title: 'Stillvorbereitung',
     shortDescription:
       'Individuelle Stillvorbereitung mit Zeit für eure Fragen - Für einen sicheren, entspannten und gelungenen Stillstart.',
@@ -96,7 +86,7 @@ const services: Service[] = [
   },
   {
     id: '4',
-    icon: <FontAwesomeIcon icon={faBaby} color="var(--primary-color)" />,
+    icon: <FontAwesomeIcon icon={faBaby} color={iconColor} />,
     title: 'Wochenbettvisite',
     shortDescription:
       'Ich begleite euch in den ersten Tagen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite.',
@@ -108,7 +98,7 @@ const services: Service[] = [
   },
   {
     id: '5',
-    icon: <FontAwesomeIcon icon={faTape} color="var(--primary-color)" />,
+    icon: <FontAwesomeIcon icon={faTape} color={iconColor} />,
     title: 'Taping',
     shortDescription:
       'Taping kann werdenden und frischgebackenen Müttern gezielt Unterstützung und Entlastung bieten.',
@@ -118,7 +108,7 @@ const services: Service[] = [
   },
   {
     id: '6',
-    icon: <FontAwesomeIcon icon={faYinYang} color="var(--primary-color)" />,
+    icon: <FontAwesomeIcon icon={faYinYang} color={iconColor} />,
     title: 'Akupunktur',
     shortDescription:
       'Akupunktur bietet Unterstützung in der Schwangerschaft, rund um die Geburt und im Wochenbett.',
@@ -130,7 +120,7 @@ const services: Service[] = [
   },
   {
     id: '7',
-    icon: <FontAwesomeIcon icon={faSpa} color="var(--primary-color)" />,
+    icon: <FontAwesomeIcon icon={faSpa} color={iconColor} />,
     title: 'Babymassage nach Leboyer ',
     shortDescription:
       'Die Babymassage nach Leboyer ist eine sanfte, liebevolle Form der Berührung, die die Bindung zwischen Eltern und Kind stärkt. ',
@@ -143,9 +133,7 @@ const services: Service[] = [
   },
   {
     id: '8',
-    icon: (
-      <FontAwesomeIcon icon={faHouseMedical} color="var(--primary-color)" />
-    ),
+    icon: <FontAwesomeIcon icon={faHouseMedical} color={iconColor} />,
     title: 'Hausgeburt',
     shortDescription:
       'Ab dem Frühling 2026 möchte ich Frauen und Familien dabei begleiten, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen.',
@@ -155,7 +143,7 @@ const services: Service[] = [
 
   {
     id: '9',
-    icon: <FontAwesomeIcon icon={faLink} color="var(--primary-color)" />,
+    icon: <FontAwesomeIcon icon={faLink} color={iconColor} />,
     title: 'Links',
     shortDescription:
       'Eine Sammlung hilfreicher und vertrauenswürdiger Links, die euch auf dem Weg ins Elternwerden informieren und unterstützen.',
@@ -232,7 +220,7 @@ function Services() {
       <Box
         id="services"
         as="section"
-        bg="var(--secondary-color)"
+        bg="var(--primary-logo-color-background)"
         py={{ base: '60px', md: '80px' }}
         px={{ base: '20px', md: '40px' }}
         scrollMarginTop="80px"
@@ -280,6 +268,7 @@ function Services() {
                     fontSize={{ base: '1.3rem', md: '1.5rem' }}
                     mb={4}
                     color="#2c2c2c"
+                    // color="var(--secondary-logo-color)"
                     fontWeight={{ base: '500', md: '400' }}
                     fontFamily="'Playfair Display', serif"
                   >
@@ -293,7 +282,7 @@ function Services() {
 
                   {/* Button */}
                   <Button
-                    background="#d4a5b8"
+                    background="var(--primary-logo-color-light)"
                     color="white"
                     border="none"
                     padding="12px 30px"
@@ -305,7 +294,7 @@ function Services() {
                     mt="auto"
                     onClick={() => openModal(service)}
                     _hover={{
-                      background: '#c08fa3',
+                      background: 'var(--primary-logo-color-dark)',
                       transform: 'translateY(-2px)',
                       boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
                     }}
@@ -327,7 +316,7 @@ function Services() {
           title={selectedService.title}
           icon={selectedService.icon}
         >
-          <Box whiteSpace="pre-line">
+          <Box whiteSpace="pre-line" color="var(--text-dark)">
             {selectedService.fullDescription && (
               <>
                 {selectedService.fullDescription
@@ -360,7 +349,7 @@ function Services() {
                       textAlign="left"
                       fontFamily="'Playfair Display', serif"
                     >
-                      {/* {link.title} */}
+                      {link.title}
                     </Link>
                   </Box>
                 ))}
