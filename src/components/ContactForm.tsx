@@ -219,7 +219,7 @@ function ContactForm({
             transition="all 0.3s ease"
             isDisabled={!isConsentGiven}
             _hover={{
-              background: 'var(--primary-logo-color)',
+              background: 'var(--primary-logo-color-dark)',
               transform: 'translateY(-2px)',
               boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
             }}
