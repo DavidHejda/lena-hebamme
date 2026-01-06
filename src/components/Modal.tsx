@@ -95,7 +95,7 @@ function Modal({
             )}
             {title && (
               <Heading
-                as="h2"
+                as="h4"
                 fontSize="2rem"
                 color="var(--text-dark)"
                 fontWeight="400"

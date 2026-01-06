@@ -18,7 +18,7 @@ function About() {
   return (
     <Box width="100%">
       <Heading
-        as="h1"
+        as="h2"
         fontSize={{ base: '2rem', md: '3.5rem' }}
         fontWeight="300"
         mb={8}

@@ -239,7 +239,7 @@ function Services() {
       >
         <Box maxWidth="1200px" mx="auto">
           <Heading
-            as="h1"
+            as="h2"
             fontSize={{ base: '2rem', md: '3.5rem' }}
             fontWeight="300"
             mb={12}
@@ -358,8 +358,9 @@ function Services() {
                       color="#666"
                       fontWeight="300"
                       textAlign="left"
+                      fontFamily="'Playfair Display', serif"
                     >
-                      {link.title}
+                      {/* {link.title} */}
                     </Link>
                   </Box>
                 ))}

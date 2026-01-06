@@ -29,20 +29,32 @@ function Hero() {
       overflow="hidden"
       scrollMarginTop="0px"
     >
-      <Box maxWidth="1200px" mx="auto" position="relative" zIndex="1" mb={0}>
-        <Image
-          src={lenaLogo}
-          alt="Lena Hebamme Logo"
-          height="200px"
-          width="auto"
-          objectFit="contain"
-          objectPosition="center"
-          justifySelf="center"
-        />
-        {/* </Heading> */}
+      <Image
+        src={lenaLogo}
+        alt="Lena Hebamme Logo"
+        height="200px"
+        width="auto"
+        objectFit="contain"
+        objectPosition="center"
+        justifySelf="center"
+        mb={'-1.1rem'}
+      />
 
+      <Box maxWidth="1200px" mx="auto" position="relative" zIndex="1" mb={0}>
         {/* Single column layout - currently active */}
         <VStack align="stretch" spacing={6} maxWidth="800px" mx="auto" mb={8}>
+          <Text
+            as="h1"
+            fontWeight="300"
+            fontSize={{ base: '1.2rem' }}
+            lineHeight="1.5"
+            textAlign="center"
+            color="#2c2c2c"
+            fontFamily="'Playfair Display', serif"
+            // letterSpacing="2px"
+          >
+            Hebammenbegleitung in Salzburg und Umgebung
+          </Text>
           {textSections.map((text, index) => (
             <Text
               key={index}

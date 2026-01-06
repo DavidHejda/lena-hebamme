@@ -97,7 +97,7 @@ const Contact = ({
       )}
       <Box maxWidth="1200px" mx="auto" position="relative" zIndex="1">
         <Heading
-          as="h1"
+          as="h2"
           fontSize={{ base: '2rem', md: '3.5rem' }}
           fontWeight="300"
           mb={12}
