@@ -92,7 +92,10 @@ const CarouselComponent = ({ images }) => {
             >
               <Image
                 src={img.url}
-                alt={`Slide ${idx + 1}`}
+                alt={
+                  img.alt ||
+                  `Persönliches Foto aus dem Leben von Lena - Bild ${idx + 1}`
+                }
                 width="100%"
                 height="100%"
                 objectFit="cover"

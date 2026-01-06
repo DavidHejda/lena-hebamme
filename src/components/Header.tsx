@@ -76,14 +76,14 @@ function Header() {
           >
             <Image
               src={sign}
-              alt="Logo"
+              alt="Lena Hebamme Logo Signatur"
               height={{ base: '40px', md: '75px' }}
               width="auto"
               objectFit="contain"
             />
             <Image
               src={nameLeft}
-              alt="Logo"
+              alt="Lena Hebamme Logo Name"
               height={{ base: '40px', md: '75px' }}
               width="auto"
               objectFit="contain"

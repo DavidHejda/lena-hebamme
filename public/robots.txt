@@ -1,0 +1,30 @@
+# robots.txt for Hebamme Lena Tiefenthaler
+# Website: https://lena-hebamme.at
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Disallow crawling of technical files and directories
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /*.json$
+Disallow: /*.ts$
+Disallow: /*.tsx$
+Disallow: /*.jsx$
+
+# Allow crawling of public assets
+Allow: /images/
+Allow: /assets/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Sitemap location
+Sitemap: https://lena-hebamme.at/sitemap.xml
+
+# Crawl delay - be respectful to server resources
+Crawl-delay: 1
+

@@ -29,58 +29,10 @@ function Hero() {
       overflow="hidden"
       scrollMarginTop="0px"
     >
-      {/* Background logo */}
-      {/* <Box
-        position="absolute"
-        top="50%"
-        left="50%"
-        transform="translate(-50%, -50%)"
-        width="100%"
-        height="100%"
-        // opacity={0.5}
-        zIndex="0"
-        pointerEvents="none"
-        backgroundColor="var(--secondary-color)"
-      >
-        <Image
-          src={logo}
-          alt=""
-          width="100%"
-          height="100%"
-          objectFit="contain"
-          objectPosition="center"
-        />
-      </Box> */}
       <Box maxWidth="1200px" mx="auto" position="relative" zIndex="1" mb={0}>
-        {/* <Heading
-          as="h1"
-          fontSize={{ base: '2rem', md: '3.5rem' }}
-          fontWeight="300"
-          mb={8}
-          letterSpacing="2px"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          gap={2}
-        > */}
-        {/* Willkommen */}
-        {/* <Image
-            src={sign}
-            alt="Logo"
-            height="75px"
-            width="auto"
-            objectFit="contain"
-          />
-          <Image
-            src={nameLeft}
-            alt="Logo"
-            height="75px"
-            width="auto"
-            objectFit="contain"
-          /> */}
         <Image
           src={lenaLogo}
-          alt="Logo"
+          alt="Lena Hebamme Logo"
           height="200px"
           width="auto"
           objectFit="contain"
@@ -97,8 +49,6 @@ function Hero() {
               fontWeight="300"
               fontSize={{ base: '1.2rem' }}
               lineHeight="1.5"
-              // lineHeight="1.8"
-              // fontSize={{ md: '1.3rem' }}
               textAlign="justify"
             >
               {text}

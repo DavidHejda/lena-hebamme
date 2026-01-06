@@ -1,36 +1,20 @@
-import { Box } from '@chakra-ui/react';
-import './App.css';
-import logo from './assets/logo-soft.png';
-import About from './components/About';
-import CarouselComponent from './components/CarouselComponent';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import ProfilePicture from './components/ProfilePicture';
-import Services from './components/Services';
-import SplitContent from './components/SplitContent';
-import { carouselImages } from './data/carouselImages';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home";
+import NotFound404 from "./components/NotFound404";
 
+/**
+ * App Component
+ *
+ * Main application component with routing setup.
+ * Handles all routes including 404 error page.
+ */
 function App() {
   return (
-    <Box id="home">
-      <Header />
-      <Hero />
-      <SplitContent
-        leftContent={<About />}
-        rightContent={<ProfilePicture />}
-        spacing={8}
-        asSection={true}
-        backgroundLogo={logo}
-        logoOpacity={0.5}
-        id="about"
-      />
-      <CarouselComponent images={carouselImages} />
-      <Services />
-      <Contact backgroundLogo={logo} logoOpacity={0.3} logoRepeat={true} />
-      <Footer />
-    </Box>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<NotFound404 />} />
+    </Routes>
   );
 }
 

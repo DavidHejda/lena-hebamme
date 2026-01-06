@@ -90,11 +90,12 @@ function SplitContent({
           >
             <Image
               src={backgroundLogo}
-              alt=""
+              alt="Lena Hebamme Logo als Hintergrunddekoration"
               width="100%"
               height="100%"
               objectFit="contain"
               objectPosition="center"
+              aria-hidden="true"
             />
           </Box>
         )}
