@@ -136,9 +136,9 @@ const services: Service[] = [
     icon: <FontAwesomeIcon icon={faHouseMedical} color={iconColor} />,
     title: 'Hausgeburt',
     shortDescription:
-      'Ab dem Frühling 2026 möchte ich Frauen und Familien dabei begleiten, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen.',
+      'Ab dem Frühling 2026 möchte ich Frauen und Familien in Salzburg und Umgebung dabei begleiten, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen.',
     fullDescription:
-      'Ab dem Frühling 2026 möchte ich Frauen und Familien dabei begleiten, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen. Eine Hausgeburt schenkt Raum für Ruhe, Vertrauen und den eigenen Rhythmus. Wenn du dir diese Form der Geburt wünschst, freue ich mich über eine unverbindliche Interessensmeldung, um dich frühzeitig kennenzulernen und gemeinsam zu schauen, ob dieser Weg für euch passt. ',
+      'Ab dem Frühling 2026 möchte ich Frauen und Familien in Salzburg und Umgebung dabei begleiten, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen. Eine Hausgeburt schenkt Raum für Ruhe, Vertrauen und den eigenen Rhythmus. Wenn du dir diese Form der Geburt wünschst, freue ich mich über eine unverbindliche Interessensmeldung, um dich frühzeitig kennenzulernen und gemeinsam zu schauen, ob dieser Weg für euch passt. ',
   },
 
   {
