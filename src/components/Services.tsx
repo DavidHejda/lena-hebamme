@@ -33,7 +33,7 @@ interface Service {
   title: string;
   shortDescription: string;
   fullDescription?: string;
-  costs?: string[];
+  costs?: (string | React.ReactNode)[];
   links?: {
     title: string;
     url: string;
@@ -56,7 +56,7 @@ const services: Service[] = [
       'Im Rahmen des Hebammengesprächs im Eltern-Kind-Pass können Schwangere zwischen der 18. und 22. Schwangerschaftswoche eine kostenlose Hebammenberatung in Anspruch nehmen. Dieses persönliche Gespräch bietet eine wertvolle Gelegenheit, sich mit einer Hebamme über alle Fragen rund um Schwangerschaft, Geburt, Wochenbett und Stillen auszutauschen.',
 
     costs: [
-      'Die Kosten von 67 Euro werden vollständig von der Krankenkasse übernommen.',
+      'Die Kosten von 67€ rechne ich ab 1.4.2026 direkt mit der Krankenkasse ab.',
     ],
   },
   {
@@ -66,23 +66,31 @@ const services: Service[] = [
     shortDescription:
       'In einer persönlichen Beratung klären wir deine Fragen, nehmen gemeinsam Unsicherheiten und gehen gerne auf deine individuellen Wunschthemen ein.',
     fullDescription:
-      'In einer persönlichen Beratung klären wir deine Fragen, nehmen gemeinsam Unsicherheiten und gehen gerne auf deine individuellen Wunschthemen ein. Je nach Bedarf kann ich folgende Untersuchungen und Kontrollen durchführen: Leopolds Handgriffe zur Lagebestimmung deines Kindes, Herztonkontrolle mit Dopton, Wachstumskontrolle deines Kindes, Blutdruckmessung, Inspektion der Brust und bei Bedarf auch eine vaginale Untersuchung. ',
+      'In einer persönlichen Beratung klären wir deine Fragen, nehmen gemeinsam Unsicherheiten und gehen gerne auf deine individuellen Wunschthemen ein. Je nach Bedarf kann ich außerdem folgende Untersuchungen und Kontrollen durchführen: Leopolds Handgriffe zur Lagebestimmung deines Kindes, Herztonkontrolle mit Dopton, Wachstumskontrolle deines Kindes, Blutdruckmessung, Inspektion der Brust und bei Bedarf auch eine vaginale Untersuchung.',
     costs: [
-      'Da ich Wahlhebamme bin kommen dabei für ca. eine Stunde Kosten von 85 Euro auf dich zu. Die Krankenkasse übernimmt bei Kassenleistungen 80% des Kassentarifs.',
+      'Da ich Wahlhebamme bin kommen dabei für ca. eine Stunde Kosten von 90€ auf dich zu. Die Krankenkasse übernimmt bei Kassenleistungen 80% des Kassentarifs.',
     ],
   },
   {
     id: '3',
     icon: <FontAwesomeIcon icon={faPersonBreastfeeding} color={iconColor} />,
-    title: 'Stillvorbereitung',
+    title: 'Kurse',
     shortDescription:
-      'Individuelle Stillvorbereitung mit Zeit für eure Fragen - Für einen sicheren, entspannten und gelungenen Stillstart.',
+      'Ich biete verschiedene Kurse rund um Schwangerschaft, Geburt und die Zeit mit dem Baby an. Dazu gehören zum Beispiel Geburtsvorbereitung oder Babymassage.',
     fullDescription:
-      'In Geburtsvorbereitungskursen kommt das Thema Stillen oft zu kurz. Ich nehme mir daher gerne extra Zeit, um mit dir – und auf Wunsch auch mit deinem Partner – die wichtigsten Schritte für einen gelungenen Stillstart zu besprechen. Gemeinsam klären wir Fragen, und schaffen Sicherheit für die ersten Wochen.',
-
-    costs: [
-      'Die Kosten richten sich nach Umfang und beginnen bei 90 Euro pro Stunde.',
-    ],
+      'Ich biete verschiedene Kurse rund um Schwangerschaft, Geburt und die Zeit mit dem Baby an. Dazu gehören zum Beispiel Geburtsvorbereitung oder Babymassage. Dabei geht es um praktisches Wissen, Sicherheit und schöne gemeinsame Momente. So könnt ihr gut vorbereitet und entspannt in diese besondere Lebensphase starten. Gerne biete ich auch Privattermine zu Geburtsvorbereitung, Stillvorbereitung und mehr an.',
+      costs: [
+        <>
+          Das Kursangebot und die Kosten findet ihr {' '}
+          <Link href="https://tiefenthaler.hebamio.at/kursliste" isExternal color="teal.500" textDecoration="underline">
+          in Hebamio
+          </Link>{' '}
+          oder im{' '}
+          <Link href="https://bildungskirche.at/veranstaltungen" isExternal color="teal.500" textDecoration="underline">
+          katholischen Bildungswerk Salzburg
+          </Link>
+        </>,
+      ],
   },
   {
     id: '4',
@@ -93,7 +101,7 @@ const services: Service[] = [
     fullDescription:
       'Ich begleite euch in den ersten Tagen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite. Wir besprechen Themen wie Stillen, Versorgung des Babys und den Alltag mit dem Neugeborenen, ich beantworte eure Fragen und gebe wertvolle Tipps für den Start ins Familienleben.',
     costs: [
-      'Die Kosten richten sich je nach Umfang zwischen 85 bis 100 Euro. Die Krankenkasse übernimmt bei Kassenleistungen 80% des Kassentarifs.',
+      'Die Kosten richten sich je nach Umfang zwischen 90€ bis 120€. Die Krankenkasse übernimmt bei Kassenleistungen 80% des Kassentarifs.',
     ],
   },
   {
@@ -104,7 +112,7 @@ const services: Service[] = [
       'Taping kann werdenden und frischgebackenen Müttern gezielt Unterstützung und Entlastung bieten.',
     fullDescription:
       'Taping kann werdenden und frischgebackenen Müttern gezielt Unterstützung und Entlastung bieten. In der Schwangerschaft helfe ich mit speziellen Tape-Anlagen, um Rücken, Becken und Gelenke zu entlasten und beschwerdefrei durch die Wochen zu kommen. Im Wochenbett kann Taping den Rückbildungsprozess, die Körperhaltung und muskuläre Stabilität fördern. Sogar Neugeborene können von Tapes, sei es bei Bauchbeschwerden oder Stillproblemen profitieren. Ich zeige dir, wie die Tapes wirken, setze sie gezielt ein.',
-    costs: ['Taping ohne Termin: 30 Euro', 'In der Beratung/Visite: 15 Euro'],
+    costs: ['Taping ohne Termin: 30€', 'In der Beratung/Visite: 15€'],
   },
   {
     id: '6',
@@ -127,8 +135,7 @@ const services: Service[] = [
     fullDescription:
       'Die Babymassage nach Leboyer ist eine sanfte, liebevolle Form der Berührung, die die Bindung zwischen Eltern und Kind stärkt. Sie unterstützt das Wohlbefinden des Babys, kann bei Unruhe, Bauchschmerzen oder Schlafproblemen helfen und vermittelt Geborgenheit. Ich zeige dir die Massagegriffe in ruhiger Atmosphäre, sodass du sie sicher und entspannt in euren Alltag integrieren kannst. ',
     costs: [
-      'Im Kurs (6 Mal) 120 Euro',
-      'Einzeltermin zu Hause mit Hebammenberatung (90-120min) 120 Euro',
+      'Einzeltermin zu Hause mit Hebammenberatung (90-120min) 120€',
     ],
   },
   {
@@ -136,9 +143,9 @@ const services: Service[] = [
     icon: <FontAwesomeIcon icon={faHouseMedical} color={iconColor} />,
     title: 'Hausgeburt',
     shortDescription:
-      'Ab dem Frühling 2026 möchte ich Frauen und Familien in Salzburg und Umgebung dabei begleiten, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen.',
+      'Ich begleite Frauen und Familien dabei, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen.',
     fullDescription:
-      'Ab dem Frühling 2026 möchte ich Frauen und Familien in Salzburg und Umgebung dabei begleiten, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen. Eine Hausgeburt schenkt Raum für Ruhe, Vertrauen und den eigenen Rhythmus. Wenn du dir diese Form der Geburt wünschst, freue ich mich über eine unverbindliche Interessensmeldung, um dich frühzeitig kennenzulernen und gemeinsam zu schauen, ob dieser Weg für euch passt. ',
+      'Ich begleite Frauen und Familien dabei, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen. Eine Hausgeburt schenkt Raum für Ruhe, Vertrauen und den eigenen Rhythmus. Wenn du dir diese Form der Geburt wünschst, freue ich mich über eine unverbindliche Interessensmeldung, um dich frühzeitig kennenzulernen und gemeinsam zu schauen, ob dieser Weg für euch passt.',
   },
 
   {

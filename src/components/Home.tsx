@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import logo from "../assets/logo-soft.png";
+import { carouselImages } from "../data/carouselImages";
 import About from "./About";
 import CarouselComponent from "./CarouselComponent";
 import Contact from "./Contact";
@@ -9,7 +10,6 @@ import Hero from "./Hero";
 import ProfilePicture from "./ProfilePicture";
 import Services from "./Services";
 import SplitContent from "./SplitContent";
-import { carouselImages } from "../data/carouselImages";
 
 /**
  * Home Component

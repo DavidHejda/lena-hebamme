@@ -2,6 +2,13 @@ import { useToast } from '@chakra-ui/react';
 import { useState } from 'react';
 import useValidation from './useValidation';
 
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
 const useContactForm = ({
   errors,
   setErrors,
@@ -13,7 +20,7 @@ const useContactForm = ({
   const { validateEmail } = useValidation();
 
   const formspreeEndpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     phone: '',
@@ -21,7 +28,7 @@ const useContactForm = ({
   });
 
   const validateForm = () => {
-    const newErrors = {};
+    const newErrors: Partial<FormData> = {};
     if (!formData.name) newErrors.name = 'Please enter your name.';
     // Email validation
     if (!formData.email) {

@@ -1,12 +1,12 @@
 import { Box, Button, Image, Text, VStack } from '@chakra-ui/react';
-import lenaLogo from '../assets/Lena_Logo.png';
+import lenaLogo from '../assets/Lena_Logo_v2.png';
 /**
  * Hero Component
  *
  * Main hero section with welcome message and introduction.
  * Displays all paragraphs in a single column layout.
  *
- * To switch to three-column layout, comment out the VStack below
+ * To switch to three-column layout, comment out the VStack below 
  * and uncomment the SimpleGrid section.
  */
 
@@ -47,11 +47,12 @@ function Hero() {
           <Text
             as="h1"
             fontWeight="300"
-            fontSize={{ base: '1.2rem' }}
+            fontSize={{ base: '1.5rem' }}
             lineHeight="1.5"
             textAlign="center"
             color="var(--secondary-logo-color)"
             fontFamily="'Playfair Display', serif"
+            mt={4}
             // letterSpacing="2px"
           >
             Hebammenbegleitung in Salzburg und Umgebung
@@ -61,7 +62,7 @@ function Hero() {
               key={index}
               fontWeight="300"
               fontSize={{ base: '1.2rem' }}
-              lineHeight="1.5"
+              lineHeight="1.4"
               textAlign="justify"
             >
               {text}

@@ -54,7 +54,7 @@ function SplitContent({
       position="relative"
       zIndex="1"
     >
-      <Box flex={{ base: '1', md: '1' }} width={{ base: '100%', md: 'auto' }}>
+      <Box flex={{ base: '1.4', md: '1.4' }} width={{ base: '100%', md: 'auto' }}>
         {leftContent}
       </Box>
       <Box flex={{ base: '1', md: '1' }} width={{ base: '100%', md: 'auto' }}>
