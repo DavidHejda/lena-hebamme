@@ -8,8 +8,21 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react';
-import './CVModal.css';
 import Modal from './Modal';
+
+const cvItemStyles = {
+  bg: 'rgba(245, 230, 232, 0.15)',
+  borderRadius: '8px',
+  transition: 'all 0.3s ease',
+  borderLeft: '3px solid transparent',
+  boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)',
+  _hover: {
+    bg: 'rgba(245, 230, 232, 0.3)',
+    borderLeftColor: 'var(--secondary-logo-color)',
+    transform: 'translateX(3px)',
+    boxShadow: '0 3px 8px rgba(0, 0, 0, 0.1)',
+  },
+};
 
 interface CVModalProps {
   isOpen: boolean;
@@ -65,12 +78,20 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
       className="cv-modal"
       displayModalHeader={false}
     >
-      <Box className="cv-modal-content">
+      <Box
+        position="relative"
+        minH="500px"
+        maxH={{ base: 'calc(100vh - 40px)', lg: 'calc(100vh - 60px)' }}
+        overflowY="auto"
+        overflowX="visible"
+        p={{ base: '1.5rem', md: '2rem' }}
+        mx="10px"
+        bgGradient="linear(to-b, rgba(255,255,255,0.98), rgba(255,255,255,1))"
+      >
         {/* Three-column layout */}
         <Grid
           templateColumns={{ base: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr' }}
           gap={4}
-          className="cv-content"
           position="relative"
           zIndex={1}
         >
@@ -97,7 +118,7 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
 
             <VStack align="stretch" spacing={3}>
               {/* Ausbildung zur Hebamme */}
-              <Box className="cv-item">
+              <Box {...cvItemStyles} p={{ base: '0.75rem', lg: '0.5rem', xl: '0.6rem' }}>
                 <Text
                   fontSize="0.85rem"
                   fontWeight="600"
@@ -139,7 +160,7 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
               </Box>
 
               {/* Bachelor Pharmazie */}
-              <Box className="cv-item">
+              <Box {...cvItemStyles} p={{ base: '0.75rem', lg: '0.5rem', xl: '0.6rem' }}>
                 <Text
                   fontSize="0.85rem"
                   fontWeight="600"
@@ -165,7 +186,7 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
               </Box>
 
               {/* Reifeprüfung */}
-              <Box className="cv-item">
+              <Box {...cvItemStyles} p={{ base: '0.75rem', lg: '0.5rem', xl: '0.6rem' }}>
                 <Text
                   fontSize="0.85rem"
                   fontWeight="600"
@@ -207,7 +228,7 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
 
             <VStack align="stretch" spacing={3}>
               {/* Hebamme im Kreißsaal */}
-              <Box className="cv-item">
+              <Box {...cvItemStyles} p={{ base: '0.75rem', lg: '0.5rem', xl: '0.6rem' }}>
                 <Text
                   fontSize={fontSize.base}
                   fontWeight="600"
@@ -235,7 +256,7 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
               </Box>
 
               {/* Freiberufliche Hebamme */}
-              <Box className="cv-item">
+              <Box {...cvItemStyles} p={{ base: '0.75rem', lg: '0.5rem', xl: '0.6rem' }}>
                 <Text
                   fontSize={fontSize.base}
                   fontWeight="600"
@@ -277,7 +298,7 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
 
             <VStack align="stretch" spacing={1.5}>
               {furtherEducation.map((item, index) => (
-                <Box key={index} className="cv-item cv-item-compact">
+                <Box key={index} {...cvItemStyles} py="0.35rem" px={{ base: '0.5rem', lg: '0.45rem' }} minH="auto">
                   <Box
                     display="flex"
                     justifyContent="space-between"

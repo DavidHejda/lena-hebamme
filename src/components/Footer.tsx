@@ -1,8 +1,6 @@
 import { Box, Flex, Link, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 import Impressum from './Impressum';
-import './Footer.css';
-
 function Footer() {
   const [isImpressumOpen, setIsImpressumOpen] = useState(false);
 
@@ -15,7 +13,7 @@ function Footer() {
         py="2rem"
         px="20px"
         mt="auto"
-        className="footer"
+
       >
         <Box maxW="1200px" mx="auto">
           <Flex

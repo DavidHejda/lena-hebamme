@@ -16,11 +16,11 @@ interface ProfilePictureProps {
 }
 
 function ProfilePicture({
-  imageUrl = '/images/6.jpg',
+  imageUrl = '/images/Profile_Picture.jpeg',
   size = { base: '250px', md: '350px' },
 }: ProfilePictureProps) {
   const [isCVModalOpen, setIsCVModalOpen] = useState(false);
-
+  
   return (
     <>
       <VStack

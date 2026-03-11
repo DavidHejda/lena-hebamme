@@ -34,6 +34,7 @@ interface Service {
   shortDescription: string;
   fullDescription?: string;
   costs?: (string | React.ReactNode)[];
+  listItems?: string[]
   links?: {
     title: string;
     url: string;
@@ -76,9 +77,10 @@ const services: Service[] = [
     icon: <FontAwesomeIcon icon={faPersonBreastfeeding} color={iconColor} />,
     title: 'Kurse',
     shortDescription:
-      'Ich biete verschiedene Kurse rund um Schwangerschaft, Geburt und die Zeit mit dem Baby an. Dazu gehören zum Beispiel Geburtsvorbereitung oder Babymassage.',
+      'In meinen Kursen möchte ich euch dabei begleiten, die Schwangerschaft, die Geburt und die erste Zeit mit eurem Kind gut informiert, gestärkt und mit Vertrauen zu erleben.',
     fullDescription:
-      'Ich biete verschiedene Kurse rund um Schwangerschaft, Geburt und die Zeit mit dem Baby an. Dazu gehören zum Beispiel Geburtsvorbereitung oder Babymassage. Dabei geht es um praktisches Wissen, Sicherheit und schöne gemeinsame Momente. So könnt ihr gut vorbereitet und entspannt in diese besondere Lebensphase starten. Gerne biete ich auch Privattermine zu Geburtsvorbereitung, Stillvorbereitung und mehr an.',
+      'In meinen Kursen möchte ich euch dabei begleiten, die Schwangerschaft, die Geburt und die erste Zeit mit eurem Kind gut informiert, gestärkt und mit Vertrauen zu erleben. In entspannter Atmosphäre vermittle ich euch praktisches Wissen, beantworte Fragen und gebe Raum für Austausch und gemeinsame Erfahrungen. Dabei geht es nicht nur um Informationen, sondern auch darum, Sicherheit zu gewinnen und eine schöne Verbindung zu eurem Baby aufzubauen. Neben Gruppenkursen biete ich auch individuelle Termine an, bei denen wir ganz auf eure persönlichen Fragen und Bedürfnisse eingehen können.',
+      listItems: ["Geburtsvorbereitung", "Stillvorbereitung", "Babymassage", "Beikosteinführung"],
       costs: [
         <>
           Das Kursangebot und die Kosten findet ihr {' '}
@@ -94,6 +96,23 @@ const services: Service[] = [
   },
   {
     id: '4',
+    icon: <FontAwesomeIcon icon={faHouseMedical} color={iconColor} />,
+    title: 'Hausgeburt',
+    shortDescription:
+      'Ich begleite Frauen und Familien dabei, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen.',
+    fullDescription:
+      'Ich begleite Frauen und Familien dabei, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen. Eine Hausgeburt schenkt Raum für Ruhe, Vertrauen und den eigenen Rhythmus. Wenn du dir diese Form der Geburt wünschst, freue ich mich über eine unverbindliche Interessensmeldung, um dich frühzeitig kennenzulernen und gemeinsam zu schauen, ob dieser Weg für euch passt.',
+  },
+  {
+    id: '5',
+    icon: <FontAwesomeIcon icon={faSpa} color={iconColor} />,
+    title: 'Wehenbegleitung zu Hause bei geplanter Klinikgeburt',
+    shortDescription:'Viele Frauen wünschen sich, diese erste Phase in der Ruhe und Geborgenheit ihres eigenen Zuhauses zu erleben.',
+    fullDescription:"Der Beginn einer Geburt ist ein sehr besonderer und oft auch intensiver Moment. Viele Frauen wünschen sich, diese erste Phase in der Ruhe und Geborgenheit ihres eigenen Zuhauses zu erleben. Gerne begleite ich euch in dieser Zeit bei euch daheim, unterstütze euch im Umgang mit den Wehen und bin an eurer Seite, um Sicherheit, Ruhe und Vertrauen zu vermitteln. In vertrauter Atmosphäre könnt ihr euren eigenen Rhythmus finden und euch gut auf die Geburt einstimmen. Gemeinsam schauen wir, wann der richtige Zeitpunkt für dich gekommen ist, um in die Klinik aufzubrechen",
+  },
+
+  {
+    id: '6',
     icon: <FontAwesomeIcon icon={faBaby} color={iconColor} />,
     title: 'Wochenbettvisite',
     shortDescription:
@@ -105,7 +124,7 @@ const services: Service[] = [
     ],
   },
   {
-    id: '5',
+    id: '7',
     icon: <FontAwesomeIcon icon={faTape} color={iconColor} />,
     title: 'Taping',
     shortDescription:
@@ -115,7 +134,7 @@ const services: Service[] = [
     costs: ['Taping ohne Termin: 30€', 'In der Beratung/Visite: 15€'],
   },
   {
-    id: '6',
+    id: '8',
     icon: <FontAwesomeIcon icon={faYinYang} color={iconColor} />,
     title: 'Akupunktur',
     shortDescription:
@@ -126,28 +145,6 @@ const services: Service[] = [
       'Die Behandlung ist derzeit noch kostenfrei, da ich mich noch in Ausbildung befinde.',
     ],
   },
-  {
-    id: '7',
-    icon: <FontAwesomeIcon icon={faSpa} color={iconColor} />,
-    title: 'Babymassage nach Leboyer ',
-    shortDescription:
-      'Die Babymassage nach Leboyer ist eine sanfte, liebevolle Form der Berührung, die die Bindung zwischen Eltern und Kind stärkt. ',
-    fullDescription:
-      'Die Babymassage nach Leboyer ist eine sanfte, liebevolle Form der Berührung, die die Bindung zwischen Eltern und Kind stärkt. Sie unterstützt das Wohlbefinden des Babys, kann bei Unruhe, Bauchschmerzen oder Schlafproblemen helfen und vermittelt Geborgenheit. Ich zeige dir die Massagegriffe in ruhiger Atmosphäre, sodass du sie sicher und entspannt in euren Alltag integrieren kannst. ',
-    costs: [
-      'Einzeltermin zu Hause mit Hebammenberatung (90-120min) 120€',
-    ],
-  },
-  {
-    id: '8',
-    icon: <FontAwesomeIcon icon={faHouseMedical} color={iconColor} />,
-    title: 'Hausgeburt',
-    shortDescription:
-      'Ich begleite Frauen und Familien dabei, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen.',
-    fullDescription:
-      'Ich begleite Frauen und Familien dabei, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen. Eine Hausgeburt schenkt Raum für Ruhe, Vertrauen und den eigenen Rhythmus. Wenn du dir diese Form der Geburt wünschst, freue ich mich über eine unverbindliche Interessensmeldung, um dich frühzeitig kennenzulernen und gemeinsam zu schauen, ob dieser Weg für euch passt.',
-  },
-
   {
     id: '9',
     icon: <FontAwesomeIcon icon={faLink} color={iconColor} />,
@@ -342,6 +339,27 @@ function Services() {
                   ))}
               </>
             )}
+
+  {selectedService.listItems && (
+                <>
+                  <Box>
+                    <UnorderedList mb={4} ml={4}>
+                      {selectedService.listItems.map((listItem, index) => (
+                        <ListItem
+                          key={index}
+                          mb={1}
+                          color="#666"
+                          fontWeight="300"
+                          lineHeight="1.6"
+                          textAlign="left"
+                        >
+                          {listItem}
+                        </ListItem>
+                      ))}
+                    </UnorderedList>
+                  </Box>
+                </>
+              )}
 
             {selectedService.links && (
               <>

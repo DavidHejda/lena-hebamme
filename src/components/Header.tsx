@@ -11,7 +11,6 @@ import {
 import { useEffect, useState } from 'react';
 import nameLeft from '../assets/Lena_Logo_Name_left.png';
 import sign from '../assets/Lena_Logo_Sign.png';
-import './Header.css';
 
 function Header() {
   const { isOpen, onToggle, onClose } = useDisclosure();

@@ -9,7 +9,6 @@ import {
   ModalOverlay,
 } from '@chakra-ui/react';
 import { useEffect } from 'react';
-import './Modal.css';
 
 interface ModalProps {
   isOpen: boolean;

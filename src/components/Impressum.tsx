@@ -1,5 +1,4 @@
 import { Box, Heading, Text, VStack } from '@chakra-ui/react';
-import './Impressum.css';
 import Modal from './Modal';
 
 interface ImpressumProps {
@@ -17,7 +16,7 @@ function Impressum({ isOpen, onClose }: ImpressumProps) {
       displayModalHeader={true}
       title="Impressum"
     >
-      <Box className="impressum-content">
+      <Box textAlign="left">
         <VStack align="stretch" spacing={6}>
           <Text>
             Die Inhalte dieser Website werden sorgfältig erstellt und regelmäßig
