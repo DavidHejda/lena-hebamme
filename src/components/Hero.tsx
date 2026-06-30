@@ -55,7 +55,7 @@ function Hero() {
             mt={4}
             // letterSpacing="2px"
           >
-            Hebammenbegleitung in Salzburg und Umgebung
+            Hebamme mit Kassenvertrag im Tennengau
           </Text>
           {textSections.map((text, index) => (
             <Text

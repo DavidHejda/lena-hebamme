@@ -54,10 +54,10 @@ const services: Service[] = [
     shortDescription:
       'Im Rahmen des Hebammengesprächs können Schwangere zwischen der 18. und 22. SSW eine kostenlose Hebammenberatung in Anspruch nehmen.',
     fullDescription:
-      'Im Rahmen des Hebammengesprächs im Eltern-Kind-Pass können Schwangere zwischen der 18. und 22. Schwangerschaftswoche eine kostenlose Hebammenberatung in Anspruch nehmen. Dieses persönliche Gespräch bietet eine wertvolle Gelegenheit, sich mit einer Hebamme über alle Fragen rund um Schwangerschaft, Geburt, Wochenbett und Stillen auszutauschen.',
+      'Im Rahmen des Hebammengesprächs im Eltern-Kind-Pass können Schwangere zwischen der 18. und 22. Schwangerschaftswoche eine kostenlose Hebammenberatung in Anspruch nehmen. Dieses persönliche Gespräch bietet eine wertvolle Gelegenheit, sich mit einer Hebamme über alle Fragen rund um Schwangerschaft, Geburt, Wochenbett und Stillen auszutauschen. Das Gespräch findet in der Ordination Dr. Parger am Kornsteinplatz 8 in Hallein statt.',
 
     costs: [
-      'Die Kosten von 67€ rechne ich ab 1.4.2026 direkt mit der Krankenkasse ab.',
+      'Die Kosten von 67€ rechne ich direkt mit der Krankenkasse ab.',
     ],
   },
   {
@@ -69,7 +69,7 @@ const services: Service[] = [
     fullDescription:
       'In einer persönlichen Beratung klären wir deine Fragen, nehmen gemeinsam Unsicherheiten und gehen gerne auf deine individuellen Wunschthemen ein. Je nach Bedarf kann ich außerdem folgende Untersuchungen und Kontrollen durchführen: Leopolds Handgriffe zur Lagebestimmung deines Kindes, Herztonkontrolle mit Dopton, Wachstumskontrolle deines Kindes, Blutdruckmessung, Inspektion der Brust und bei Bedarf auch eine vaginale Untersuchung.',
     costs: [
-      'Da ich Wahlhebamme bin kommen dabei für ca. eine Stunde Kosten von 90€ auf dich zu. Die Krankenkasse übernimmt bei Kassenleistungen 80% des Kassentarifs.',
+      'Visiten im Leistungskatalog der Krankenkassen sind kostenlos. Kosten der Leistung außerhalb des Leistungskatalogs der Krankenkasse: 90 - 120 € ',
     ],
   },
   {
@@ -101,7 +101,10 @@ const services: Service[] = [
     shortDescription:
       'Ich begleite Frauen und Familien dabei, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen.',
     fullDescription:
-      'Ich begleite Frauen und Familien dabei, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen. Eine Hausgeburt schenkt Raum für Ruhe, Vertrauen und den eigenen Rhythmus. Wenn du dir diese Form der Geburt wünschst, freue ich mich über eine unverbindliche Interessensmeldung, um dich frühzeitig kennenzulernen und gemeinsam zu schauen, ob dieser Weg für euch passt.',
+      'Ich begleite in Kooperation mit Hebamme Elisabeth Kogler, Frauen und Familien dabei, ihr Kind geborgen, selbstbestimmt und in vertrauter Umgebung zu Hause zur Welt zu bringen. Eine Hausgeburt schenkt Raum für Ruhe, Vertrauen und den eigenen Rhythmus. Wenn du dir diese Form der Geburt wünschst, freue ich mich über eine unverbindliche Interessensmeldung, um dich frühzeitig kennenzulernen und gemeinsam zu schauen, ob dieser Weg für euch passt. ',
+      costs: [
+      'Die Kosten für die Hausgeburt rechne ich direkt mit der Krankenkasse ab',
+    ],
   },
   {
     id: '5',
@@ -120,7 +123,7 @@ const services: Service[] = [
     fullDescription:
       'Ich begleite euch in den ersten Tagen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite. Wir besprechen Themen wie Stillen, Versorgung des Babys und den Alltag mit dem Neugeborenen, ich beantworte eure Fragen und gebe wertvolle Tipps für den Start ins Familienleben.',
     costs: [
-      'Die Kosten richten sich je nach Umfang zwischen 90€ bis 120€. Die Krankenkasse übernimmt bei Kassenleistungen 80% des Kassentarifs.',
+      'Visiten im Leistungskatalog der Krankenkassen sind kostenlos. Kosten der Leistung außerhalb des Leistungskatalogs der Krankenkasse: 90 - 120 €',
     ],
   },
   {
@@ -131,7 +134,7 @@ const services: Service[] = [
       'Taping kann werdenden und frischgebackenen Müttern gezielt Unterstützung und Entlastung bieten.',
     fullDescription:
       'Taping kann werdenden und frischgebackenen Müttern gezielt Unterstützung und Entlastung bieten. In der Schwangerschaft helfe ich mit speziellen Tape-Anlagen, um Rücken, Becken und Gelenke zu entlasten und beschwerdefrei durch die Wochen zu kommen. Im Wochenbett kann Taping den Rückbildungsprozess, die Körperhaltung und muskuläre Stabilität fördern. Sogar Neugeborene können von Tapes, sei es bei Bauchbeschwerden oder Stillproblemen profitieren. Ich zeige dir, wie die Tapes wirken, setze sie gezielt ein.',
-    costs: ['Taping ohne Termin: 30€', 'In der Beratung/Visite: 15€'],
+    costs: ['Taping: 30€'],
   },
   {
     id: '8',
@@ -153,7 +156,7 @@ const services: Service[] = [
       'Eine Sammlung hilfreicher und vertrauenswürdiger Links, die euch auf dem Weg ins Elternwerden informieren und unterstützen.',
     links: [
       {
-        title: 'Hebammenleistungen, die die Krankenkasse übernimmt',
+        title: 'Leistungskatalog der Krankenkassen',
         url: 'https://hebammen.at/eltern/kosten/',
       },
       {

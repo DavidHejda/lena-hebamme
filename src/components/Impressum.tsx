@@ -64,7 +64,16 @@ function Impressum({ isOpen, onClose }: ImpressumProps) {
               <Text>Österreich</Text>
             </VStack>
           </Box>
-
+ <Box>
+            <Heading as="h3" fontSize="1.2rem" fontWeight="600" mb={2}>
+              Berufssitz:
+            </Heading>
+            <VStack align="flex-start" spacing={0}>
+              <Text>Kornsteinplatz 8</Text>
+              <Text>5400 Hallein</Text>
+              <Text>Österreich</Text>
+            </VStack>
+          </Box>
           <Box>
             <Heading as="h3" fontSize="1.2rem" fontWeight="600" mb={2}>
               Kontakt:

@@ -23,8 +23,17 @@ const contactInformation = [
     ],
   },
   {
+    label: 'Anmeldung',
+    value: ['Hebamio'],
+    link: 'tiefenthaler.hebamio.at'
+  },
+  {
     label: 'Betreuungsgebiet',
-    value: ['Salzburg und Umgebung'],
+    value: ['Tennengau', 'Hausgeburten in Stadt und Land Salzburg und nach Absprache'],
+  },
+   {
+    label: 'Wohnort / Berufssitz',
+    value: ['Elsbethen / Hallein'],
   },
 ];
 
@@ -48,9 +57,17 @@ const ContactInfo = () => {
               {item.label}
             </Heading>
             {item.value.map((value) => (
-              <Text key={value} color="var(--text-light)" lineHeight="1.6">
-                {value}
-              </Text>
+              item.link ? (
+                <Text key={value} color="var(--text-light)" lineHeight="1.6">
+                  <a href={`https://${item.link}`} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-light)', textDecoration: 'underline' }}>
+                    {value}
+                  </a>
+                </Text>
+              ) : (
+                <Text key={value} color="var(--text-light)" lineHeight="1.6">
+                  {value}
+                </Text>
+              )
             ))}
           </Box>
         ))}
@@ -58,5 +75,4 @@ const ContactInfo = () => {
     </Box>
   );
 };
-
 export default ContactInfo;

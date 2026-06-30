@@ -15,11 +15,11 @@ import { Box, Heading, Text, VStack } from '@chakra-ui/react';
 // ];
 
 const textSections = [
-  "Mein Name ist Lena Tiefenthaler, ich bin Wahlhebamme im Raum Salzburg.",
-  <><i>„Ljósmóðir – Lichtmutter"</i> So nennen die Isländer:innen ihre Hebammen. Ein Wort, das mich tief berührt hat und das beschreibt, wofür ich stehe: Licht in einen der intensivsten und kostbarsten Momente des Lebens zu bringen."</>,
+  "Mein Name ist Lena Tiefenthaler, ich bin Hebamme mit Kassenvertrag im Tennengau.",
+  <><i>„Ljósmóðir – Lichtmutter"</i> So nennen die Isländer:innen ihre Hebammen. Ein Wort, das mich tief berührt hat und das beschreibt, wofür ich stehe: Licht in einen der intensivsten und kostbarsten Momente des Lebens zu bringen.</>,
   "Menschen beschreiben mich als Powerfrau mit Herz – jemand, auf den man zählen kann, der Sicherheit ausstrahlt und zugleich warm und nahbar ist. Offenheit, Ehrlichkeit und Verlässlichkeit prägen meine Arbeit ebenso wie meine Fähigkeit, auch in intensiven Momenten ruhig zu bleiben und den Überblick zu bewahren.",
-  "Geboren in der Landesklinik Hallein, aufgewachsen in Elsbethen, führte mich mein beruflicher Weg zur Hebammenausbildung in Augsburg. Danach sammelte ich knapp vier Jahre wertvolle Erfahrung im Kreißsaal in Baden-Württemberg – sowohl im ärztlich geleiteten als auch im Hebammenkreißsaal. In dieser Zeit durfte ich mehr als 300 Geburten begleiten. Parallel dazu war ich ab 2024 als freiberufliche Hebamme in Schwangerschaft und Wochenbett tätig.",
-  "Ausgleich und Kraft finde ich in der Natur – beim Wandern, an Seen, unterwegs in Salzburg und Umgebung mit meiner Labradorhündin. Das Reisen und das Vertrauen in den eigenen Weg haben mich geprägt: als Au-pair in Island, wo ich die Bedeutung des Wortes Ljósmóðir kennenlernte, und zuletzt mehrere Monate mit Dachzelt und Hund in Skandinavien und im Baltikum. "
+  "Geboren in der Landesklinik Hallein, aufgewachsen in Elsbethen, führte mich mein beruflicher Weg zur Hebammenausbildung in Augsburg. Danach sammelte ich knapp vier Jahre wertvolle Erfahrung im Kreißsaal in Baden-Württemberg – sowohl im ärztlich geleiteten als auch im Hebammenkreißsaal. In dieser Zeit durfte ich mehr als 300 Geburten begleiten. Parallel dazu war ich ab 2024 als freiberufliche Hebamme in Schwangerschaft und Wochenbett tätig. Seit 1.7.2026 begleite ich als Kassenhebamme kostenlos Frauen in Schwangerschaft, Geburt und Wochenbett im Tennengau und Umgebung.",
+  "Ausgleich und Kraft finde ich in der Natur – beim Wandern, an Seen, unterwegs in Salzburg und Umgebung mit meiner Labradorhündin. Das Reisen und das Vertrauen in den eigenen Weg haben mich geprägt: als Au-pair in Island, wo ich die Bedeutung des Wortes Ljósmóðir kennenlernte, und zuletzt mehrere Monate mit Dachzelt und Hund in Skandinavien und im Baltikum."
 ]
 
 function About() {
@@ -47,6 +47,8 @@ function About() {
             fontSize={{ base: '1.2rem' }}
             textAlign="justify"
             color="gray.700"
+            letterSpacing={index === 0 ? '-0.01em' : 'normal'}
+            whiteSpace={index === 0 ? { base: 'normal', md: 'nowrap' } : 'normal'}
           >
             {text}
           </Text>

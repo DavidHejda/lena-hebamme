@@ -272,6 +272,22 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
                   Februar 2024 – Mai 2025
                 </Text>
               </Box>
+
+              <Box {...cvItemStyles} p={{ base: '0.75rem', lg: '0.5rem', xl: '0.6rem' }}>
+                <Text
+                  fontSize={fontSize.base}
+                  fontWeight="600"
+                  color="#2c2c2c"
+                  mb={1}
+                >
+                  Freiberufliche Hebamme
+                </Text>
+                <Text fontSize={fontSize.base} color="#666" mb={1}>
+Schwangerschaftsberatung, Hausgeburt & Wochenbett                </Text>
+                <Text fontSize={fontSize.base} color="#999">
+                  Seit Jänner 2026
+                </Text>
+              </Box>
             </VStack>
           </GridItem>
 
