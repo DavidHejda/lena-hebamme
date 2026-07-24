@@ -143,10 +143,7 @@ const services: Service[] = [
     shortDescription:
       'Akupunktur bietet Unterstützung in der Schwangerschaft, rund um die Geburt und im Wochenbett.',
     fullDescription:
-      'Akupunktur kann Schwangerschaftsbeschwerden wie Übelkeit, Rückenschmerzen, Schlafprobleme oder Ödeme lindern. Die geburtsvorbereitende Akupunktur unterstützt die Reifung des Muttermundes, verkürzt nachweislich die Geburtsdauer und sorgt für einen sanften Start in die Geburt. So begleite ich dich gezielt zu mehr Wohlbefinden und Sicherheit in dieser besonderen Zeit.',
-    costs: [
-      'Die Behandlung ist derzeit noch kostenfrei, da ich mich noch in Ausbildung befinde.',
-    ],
+      'Akupunktur kann Schwangerschaftsbeschwerden wie Übelkeit, Rückenschmerzen, Schlafprobleme oder Ödeme lindern. Die geburtsvorbereitende Akupunktur unterstützt die Reifung des Muttermundes, verkürzt nachweislich die Geburtsdauer und sorgt für einen sanften Start in die Geburt. So begleite ich dich gezielt zu mehr Wohlbefinden und Sicherheit in dieser besonderen Zeit. Aktuell findet jeden Dienstag geburtsvorbereitende Akupunktur in der Gruppe statt, melde dich gerne.',
   },
   {
     id: '9',
