@@ -39,6 +39,22 @@ const furtherEducation = [
     title: 'Notfall- und Reanimationstrainings',
     date: 'Regelmäßig',
   },
+     {
+    title: 'Spinning Babies',
+    date: '11.2026',
+  },
+     {
+    title: 'Stillvorbereitung als Hebammenkompetenz',
+    date: '10.2026',
+  },
+    {
+    title: 'Babys artgerecht® begleiten. Neue Wege rund um das Thema Stillen, Wickeln und Babyschlaf',
+    date: '02.2026',
+  },
+    {
+    title: 'Naturheilkunde in Schwangerschaft, Geburt und Wochenbett',
+    date: '02.2026',
+  },
   {
     title: 'Akupunktur für Hebammen',
     date: '10.2024 bis heute',
@@ -227,6 +243,40 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
             </Heading>
 
             <VStack align="stretch" spacing={3}>
+<Box {...cvItemStyles} p={{ base: '0.75rem', lg: '0.5rem', xl: '0.6rem' }}>
+                <Text
+                  fontSize={fontSize.base}
+                  fontWeight="600"
+                  color="#2c2c2c"
+                  mb={1}
+                >
+                  Freiberufliche Hebamme
+                </Text>
+                <Text fontSize={fontSize.base} color="#666" mb={1}>
+Schwangerschaftsberatung, Hausgeburt & Wochenbett                </Text>
+                <Text fontSize={fontSize.base} color="#999">
+                  Seit Jänner 2026
+                </Text>
+              </Box>
+
+ {/* Freiberufliche Hebamme */}
+              <Box {...cvItemStyles} p={{ base: '0.75rem', lg: '0.5rem', xl: '0.6rem' }}>
+                <Text
+                  fontSize={fontSize.base}
+                  fontWeight="600"
+                  color="#2c2c2c"
+                  mb={1}
+                >
+                  Freiberufliche Hebamme
+                </Text>
+                <Text fontSize={fontSize.base} color="#666" mb={1}>
+                  Schwangerschaftsberatung & Wochenbett
+                </Text>
+                <Text fontSize={fontSize.base} color="#999">
+                  Februar 2024 – Mai 2025
+                </Text>
+              </Box>
+
               {/* Hebamme im Kreißsaal */}
               <Box {...cvItemStyles} p={{ base: '0.75rem', lg: '0.5rem', xl: '0.6rem' }}>
                 <Text
@@ -255,39 +305,9 @@ function CVModal({ isOpen, onClose }: CVModalProps) {
                 </Box>
               </Box>
 
-              {/* Freiberufliche Hebamme */}
-              <Box {...cvItemStyles} p={{ base: '0.75rem', lg: '0.5rem', xl: '0.6rem' }}>
-                <Text
-                  fontSize={fontSize.base}
-                  fontWeight="600"
-                  color="#2c2c2c"
-                  mb={1}
-                >
-                  Freiberufliche Hebamme
-                </Text>
-                <Text fontSize={fontSize.base} color="#666" mb={1}>
-                  Schwangerschaftsberatung & Wochenbett
-                </Text>
-                <Text fontSize={fontSize.base} color="#999">
-                  Februar 2024 – Mai 2025
-                </Text>
-              </Box>
+             
 
-              <Box {...cvItemStyles} p={{ base: '0.75rem', lg: '0.5rem', xl: '0.6rem' }}>
-                <Text
-                  fontSize={fontSize.base}
-                  fontWeight="600"
-                  color="#2c2c2c"
-                  mb={1}
-                >
-                  Freiberufliche Hebamme
-                </Text>
-                <Text fontSize={fontSize.base} color="#666" mb={1}>
-Schwangerschaftsberatung, Hausgeburt & Wochenbett                </Text>
-                <Text fontSize={fontSize.base} color="#999">
-                  Seit Jänner 2026
-                </Text>
-              </Box>
+              
             </VStack>
           </GridItem>
 

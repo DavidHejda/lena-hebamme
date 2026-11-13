@@ -50,11 +50,11 @@ const services: Service[] = [
   {
     id: '1',
     icon: <FontAwesomeIcon icon={faHandsHoldingChild} color={iconColor} />,
-    title: 'Hebammenberatung im Rahmen des Eltern-Kind-Passes',
+    title: 'Hebammenberatungen im Rahmen des Eltern-Kind-Passes',
     shortDescription:
-      'Im Rahmen des Hebammengesprächs können Schwangere zwischen der 18. und 22. SSW eine kostenlose Hebammenberatung in Anspruch nehmen.',
+      'Im Rahmen des Hebammengespräche können Schwangere zwischen der 14. und 20. SSW und zwischen der 24. und 34. SSW jeweils eine kostenlose Hebammenberatung in Anspruch nehmen.',
     fullDescription:
-      'Im Rahmen des Hebammengesprächs im Eltern-Kind-Pass können Schwangere zwischen der 18. und 22. Schwangerschaftswoche eine kostenlose Hebammenberatung in Anspruch nehmen. Dieses persönliche Gespräch bietet eine wertvolle Gelegenheit, sich mit einer Hebamme über alle Fragen rund um Schwangerschaft, Geburt, Wochenbett und Stillen auszutauschen. Das Gespräch findet in der Ordination Dr. Parger am Kornsteinplatz 8 in Hallein statt.',
+      'Im Rahmen des Hebammengesprächs im Eltern-Kind-Pass können Schwangere zwischen der 14. und 20. SSW und zwischen der 24. und 34. SSW jeweils eine kostenlose Hebammenberatung in Anspruch nehmen. Außerdem kann im Zuge des 1. Gesprächs, das Gesundheitsgespräch durchgeführt werden. Diese persönlichen Gespräche bietet eine wertvolle Gelegenheit, sich mit einer Hebamme über alle Fragen rund um Schwangerschaft, Geburt, Wochenbett und Stillen auszutauschen. Das Gespräch findet in der Ordination Dr. Parger am Kornsteinplatz 8 in Hallein statt.',
 
     costs: [
       'Die Kosten von 67€ rechne ich direkt mit der Krankenkasse ab.',
@@ -80,7 +80,7 @@ const services: Service[] = [
       'In meinen Kursen möchte ich euch dabei begleiten, die Schwangerschaft, die Geburt und die erste Zeit mit eurem Kind gut informiert, gestärkt und mit Vertrauen zu erleben.',
     fullDescription:
       'In meinen Kursen möchte ich euch dabei begleiten, die Schwangerschaft, die Geburt und die erste Zeit mit eurem Kind gut informiert, gestärkt und mit Vertrauen zu erleben. In entspannter Atmosphäre vermittle ich euch praktisches Wissen, beantworte Fragen und gebe Raum für Austausch und gemeinsame Erfahrungen. Dabei geht es nicht nur um Informationen, sondern auch darum, Sicherheit zu gewinnen und eine schöne Verbindung zu eurem Baby aufzubauen. Neben Gruppenkursen biete ich auch individuelle Termine an, bei denen wir ganz auf eure persönlichen Fragen und Bedürfnisse eingehen können.',
-      listItems: ["Geburtsvorbereitung", "Stillvorbereitung", "Babymassage", "Beikosteinführung"],
+      listItems: ["Geburtsvorbereitung Schritt für Schritt über 5 Wochen", "Geburtsvorbereitung kompakt", "Stillvorbereitung", "Babymassage"],
       costs: [
         <>
           Das Kursangebot und die Kosten findet ihr {' '}
@@ -119,9 +119,9 @@ const services: Service[] = [
     icon: <FontAwesomeIcon icon={faBaby} color={iconColor} />,
     title: 'Wochenbettvisite',
     shortDescription:
-      'Ich begleite euch in den ersten Tagen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite.',
+      'Ich begleite euch in den ersten Tagen und Wochen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite.',
     fullDescription:
-      'Ich begleite euch in den ersten Tagen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite. Wir besprechen Themen wie Stillen, Versorgung des Babys und den Alltag mit dem Neugeborenen, ich beantworte eure Fragen und gebe wertvolle Tipps für den Start ins Familienleben.',
+      'Ich begleite euch in den ersten Tagen und Wochen nach der Geburt direkt zu Hause und stehe mit Rat und Tat zur Seite. Wir besprechen Themen wie Stillen, Versorgung des Babys und den Alltag mit dem Neugeborenen, ich beantworte eure Fragen und gebe wertvolle Tipps für den Start ins Familienleben.',
     costs: [
       'Visiten im Leistungskatalog der Krankenkassen sind kostenlos. Kosten der Leistung außerhalb des Leistungskatalogs der Krankenkasse: 90 - 120 €',
     ],

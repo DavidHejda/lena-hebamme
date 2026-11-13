@@ -47,15 +47,21 @@ function Hero() {
           <Text
             as="h1"
             fontWeight="300"
-            fontSize={{ base: '1.5rem' }}
+            fontSize={{ base: '1.5rem', md: '1.9rem', xl: '2.2rem' }}
             lineHeight="1.5"
             textAlign="center"
             color="var(--secondary-logo-color)"
             fontFamily="'Playfair Display', serif"
             mt={4}
-            // letterSpacing="2px"
+            mx="auto"
+            maxW={{ base: '100%', md: '680px', xl: '900px' }}
           >
-            Hebamme mit Kassenvertrag im Tennengau
+            Hebamme für Hausgeburten in und um Salzburg
+            <Box as="span" display={{ base: 'none', xl: 'block' }} w="100%" />
+            {' '}
+            <Box as="span" display={{ base: 'inline', xl: 'inline' }}>
+              mit Kassenvertrag im Tennengau
+            </Box>
           </Text>
           {textSections.map((text, index) => (
             <Text

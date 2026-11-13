@@ -25,11 +25,11 @@ const contactInformation = [
   {
     label: 'Anmeldung',
     value: ['Hebamio'],
-    link: 'tiefenthaler.hebamio.at'
+    link: 'tiefenthaler.hebamio.at/anmeldung'
   },
   {
     label: 'Betreuungsgebiet',
-    value: ['Tennengau', 'Hausgeburten in Stadt und Land Salzburg und nach Absprache'],
+    value: ['Wochenbettbetreuung im Tennengau', 'Hausgeburten in Salzburg / Umgebung und nach Absprache','Blaulichtbewilligung für Salzburg und angrenzendes Oberösterreich'],
   },
    {
     label: 'Wohnort / Berufssitz',
